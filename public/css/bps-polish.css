@@ -1,0 +1,6986 @@
+:root {
+    --bps-navy: #0b172f;
+    --bps-navy-2: #12254a;
+    --bps-blue: #0d6efd;
+    --bps-blue-2: #2563eb;
+    --bps-sky: #38bdf8;
+    --bps-bg: #f4f7fb;
+    --bps-card: #ffffff;
+    --bps-border: #dbe5f1;
+    --bps-border-2: #c9d7e8;
+    --bps-text: #0f172a;
+    --bps-muted: #64748b;
+    --bps-soft-blue: #eef6ff;
+    --bps-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    --bps-shadow-soft: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #94a3b8 transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(circle at top left, rgba(13, 110, 253, 0.08), transparent 32%),
+        linear-gradient(135deg, #f8fbff 0%, #eef4fb 100%) !important;
+    color: var(--bps-text);
+    font-family: "Inter", "Segoe UI", Arial, sans-serif !important;
+    font-size: 14px;
+}
+
+/* Sidebar and topbar CSS removed, now managed centrally by sidebar.css */
+
+.content {
+    padding: 28px 32px 36px !important;
+}
+
+/* ===== Cards ===== */
+.card,
+.stat-card,
+.table-card,
+.form-card {
+    border: 1px solid rgba(219, 229, 241, 0.95) !important;
+    border-radius: 22px !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: var(--bps-shadow-soft) !important;
+    overflow: hidden;
+}
+
+.card:hover,
+.stat-card:hover,
+.table-card:hover,
+.form-card:hover {
+    box-shadow: var(--bps-shadow) !important;
+}
+
+.card-header {
+    padding: 18px 20px !important;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%) !important;
+    border-bottom: 1px solid rgba(219, 229, 241, 0.85) !important;
+}
+
+.card-header h5,
+.card-header h6 {
+    color: #0f172a;
+    letter-spacing: -.15px;
+}
+
+.card-body {
+    padding: 20px !important;
+}
+
+.rounded-4.bg-light.border,
+.bg-light.border.rounded-4 {
+    background: linear-gradient(135deg, #f8fbff, #eef6ff) !important;
+    border: 1px solid #dce9f8 !important;
+    box-shadow: inset 0 1px 0 #ffffff, 0 6px 16px rgba(15,23,42,.045);
+}
+
+/* ===== Buttons and form controls ===== */
+.btn {
+    border-radius: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: .1px;
+    box-shadow: none !important;
+}
+
+.btn-sm {
+    border-radius: 10px !important;
+}
+
+.btn-primary {
+    border-color: transparent !important;
+    background: linear-gradient(135deg, #0d6efd, #2563eb) !important;
+}
+
+.btn-primary:hover {
+    filter: brightness(.96);
+    transform: translateY(-1px);
+}
+
+.btn-outline-primary {
+    border-color: rgba(13, 110, 253, .45) !important;
+    color: #0d6efd !important;
+    background: #ffffff !important;
+}
+
+.btn-outline-primary:hover {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #0d6efd, #2563eb) !important;
+}
+
+.btn-warning {
+    color: #6b4200 !important;
+    border-color: #f8d569 !important;
+    background: linear-gradient(135deg, #ffe082, #ffc107) !important;
+}
+
+.btn-danger {
+    border-color: transparent !important;
+    background: linear-gradient(135deg, #ef4444, #dc3545) !important;
+}
+
+.btn-light {
+    border: 1px solid #e2e8f0 !important;
+    background: #f8fafc !important;
+}
+
+.form-control,
+.form-select {
+    min-height: 42px;
+    border-radius: 13px !important;
+    border: 1px solid #d6e0ec !important;
+    color: #0f172a !important;
+    background-color: #ffffff !important;
+    box-shadow: inset 0 1px 1px rgba(15, 23, 42, 0.02);
+}
+
+textarea.form-control {
+    min-height: 108px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: rgba(13, 110, 253, 0.72) !important;
+    box-shadow: 0 0 0 .22rem rgba(13, 110, 253, 0.12) !important;
+}
+
+.form-label {
+    color: #1e293b;
+    font-size: 13px;
+}
+
+.input-group {
+    gap: 0 !important;
+}
+
+.input-group > .form-control:not(:last-child),
+.input-group > .form-select:not(:last-child),
+.input-group > .input-group-text:not(:last-child) {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.input-group > .form-control:not(:first-child),
+.input-group > .form-select:not(:first-child),
+.input-group > .input-group-text:not(:first-child) {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.input-group > .btn:not(:first-child),
+.input-group > .input-group-text:not(:first-child) {
+    margin-left: -1px !important;
+}
+
+.input-group > .btn:not(:first-child) {
+    border-radius: 0 13px 13px 0 !important;
+}
+
+.input-group > .btn:not(:last-child) {
+    border-radius: 13px 0 0 13px !important;
+}
+
+/* ===== Alerts ===== */
+.alert {
+    border-radius: 16px !important;
+    border-width: 1px !important;
+    line-height: 1.55;
+}
+
+.alert-info {
+    color: #075985 !important;
+    background: linear-gradient(135deg, rgba(224, 242, 254, .95), rgba(239, 246, 255, .95)) !important;
+    border-color: #bae6fd !important;
+}
+
+.alert-success {
+    color: #14532d !important;
+    background: linear-gradient(135deg, #ecfdf5, #f0fdf4) !important;
+    border-color: #bbf7d0 !important;
+}
+
+.alert-warning {
+    color: #6b4200 !important;
+    background: linear-gradient(135deg, #fffbeb, #fff7ed) !important;
+    border-color: #fde68a !important;
+}
+
+.alert-danger {
+    color: #7f1d1d !important;
+    background: linear-gradient(135deg, #fef2f2, #fff1f2) !important;
+    border-color: #fecaca !important;
+}
+
+/* ===== Tables ===== */
+.table-fit-wrapper,
+.table-responsive {
+    width: 100%;
+    overflow-x: auto !important;
+    background: #ffffff;
+    border: 1px solid var(--bps-border) !important;
+    border-radius: 18px;
+}
+
+.table {
+    margin-bottom: 0 !important;
+}
+
+.table-clean {
+    width: 100%;
+    border: 0 !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    overflow: hidden;
+}
+
+.table-clean thead th {
+    background: linear-gradient(180deg, #edf6ff 0%, #e5f0ff 100%) !important;
+    color: #10223f !important;
+    border: 0 !important;
+    border-bottom: 1px solid var(--bps-border-2) !important;
+    font-size: 12.5px !important;
+    font-weight: 800 !important;
+    padding: 13px 12px !important;
+    vertical-align: middle !important;
+    white-space: nowrap;
+}
+
+.table-clean thead th:not(:last-child),
+.table-clean tbody td:not(:last-child) {
+    border-right: 1px solid #e4edf8 !important;
+}
+
+.table-clean tbody td {
+    border: 0 !important;
+    border-bottom: 1px solid #edf2f7 !important;
+    padding: 12px 12px !important;
+    vertical-align: middle !important;
+    color: #1e293b;
+    background: #ffffff !important;
+}
+
+.table-clean tbody tr:nth-child(even) td {
+    background: #fbfdff !important;
+}
+
+.table-clean tbody tr:hover td {
+    background: #f2f8ff !important;
+}
+
+.table-clean tbody tr:last-child td {
+    border-bottom: 0 !important;
+}
+
+.table-clean .name-cell {
+    color: #0f172a;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.sort-link {
+    color: #10223f !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center !important;
+    gap: 7px;
+    width: 100%;
+}
+
+.sort-link:hover,
+.sort-link.active {
+    color: var(--bps-blue) !important;
+}
+
+.sort-active {
+    background: linear-gradient(180deg, #dcecff 0%, #d4e8ff 100%) !important;
+    box-shadow: inset 0 -2px 0 var(--bps-blue) !important;
+}
+
+.sort-icon {
+    font-size: 10.5px;
+}
+
+.publication-fit-table {
+    table-layout: fixed !important;
+    min-width: 980px;
+}
+
+.publication-fit-table th,
+.publication-fit-table td {
+    text-align: center !important;
+    word-break: break-word !important;
+}
+
+.publication-fit-table .name-cell,
+.publication-fit-table td:nth-child(2) {
+    text-align: left !important;
+}
+
+.publication-fit-table th:nth-child(1),
+.publication-fit-table td:nth-child(1) {
+    width: 58px !important;
+    min-width: 58px !important;
+}
+
+.table-action-btn {
+    width: 34px !important;
+    height: 34px !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-stack {
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 80px;
+    line-height: 1.15;
+}
+
+.date-main {
+    font-weight: 800 !important;
+    color: #0f172a !important;
+}
+
+.date-year {
+    margin-top: 3px;
+    color: var(--bps-muted) !important;
+    font-size: 12px !important;
+}
+
+.status-chip,
+.compact-badge,
+.badge {
+    border-radius: 999px !important;
+    font-weight: 800 !important;
+    letter-spacing: .05px;
+}
+
+.status-chip {
+    min-width: 86px;
+    max-width: 130px;
+    padding: .38rem .68rem !important;
+    font-size: 11.3px !important;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.status-chip.info {
+    color: #075985 !important;
+    background: rgba(14, 165, 233, 0.16) !important;
+    border: 1px solid rgba(14, 165, 233, 0.35) !important;
+}
+
+.status-chip.success {
+    color: #166534 !important;
+    background: rgba(34, 197, 94, 0.16) !important;
+    border: 1px solid rgba(34, 197, 94, 0.35) !important;
+}
+
+.status-chip.warning {
+    color: #92400e !important;
+    background: rgba(245, 158, 11, 0.18) !important;
+    border: 1px solid rgba(245, 158, 11, 0.38) !important;
+}
+
+.status-chip.secondary {
+    color: #334155 !important;
+    background: rgba(148, 163, 184, 0.22) !important;
+    border: 1px solid rgba(148, 163, 184, 0.38) !important;
+}
+
+.compact-badge {
+    padding: .36rem .62rem !important;
+    font-size: 11px !important;
+}
+
+/* ===== Chart area ===== */
+.single-bar-chart-wrap,
+.chart-box {
+    border: 1px solid #dbeafe;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #ffffff, #f8fbff);
+    padding: 16px;
+    box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.single-bar-chart-wrap {
+    min-height: 250px !important;
+}
+
+/* ===== Pagination ===== */
+.pagination {
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.pagination .page-link {
+    min-width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px !important;
+    border-color: #dbe5f1 !important;
+    color: #1e40af;
+    font-weight: 700;
+}
+
+.pagination .active > .page-link,
+.page-item.active .page-link {
+    background: linear-gradient(135deg, #0d6efd, #2563eb) !important;
+    border-color: transparent !important;
+}
+
+.pagination svg {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+/* ===== Utility refinements ===== */
+.text-muted {
+    color: var(--bps-muted) !important;
+}
+
+.border-bottom {
+    border-bottom-color: #e2e8f0 !important;
+}
+
+iframe {
+    background: #f8fafc;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .sidebar {
+        position: relative !important;
+        width: 100% !important;
+        min-height: auto !important;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .main-wrapper {
+        margin-left: 0 !important;
+    }
+
+    .topbar {
+        position: relative;
+        padding: 14px 18px !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 12px;
+    }
+
+    .content {
+        padding: 18px !important;
+    }
+
+    .publication-fit-table {
+        min-width: 920px;
+    }
+}
+
+/* ===== Revisi kerapian admin - Mei 2026 ===== */
+.dashboard-status-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.dashboard-status-card {
+    min-height: 106px;
+    padding: 16px 17px;
+    border: 1px solid #dce9f8;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #f8fbff, #eef6ff);
+    box-shadow: inset 0 1px 0 #ffffff, 0 6px 16px rgba(15, 23, 42, .045);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dashboard-status-card small {
+    color: var(--bps-muted);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.dashboard-status-number {
+    margin-top: 9px;
+    color: var(--bps-text);
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.dashboard-status-percent {
+    margin-top: 7px;
+    color: #334155;
+    font-size: 12.5px;
+    font-weight: 700;
+}
+
+.table-clean th:first-child,
+.table-clean td:first-child,
+.table-clean .col-no {
+    width: 46px !important;
+    min-width: 46px !important;
+    max-width: 46px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+}
+
+.publication-fit-table {
+    min-width: 900px !important;
+}
+
+.publication-fit-table th:nth-child(1),
+.publication-fit-table td:nth-child(1) {
+    width: 46px !important;
+    min-width: 46px !important;
+    max-width: 46px !important;
+}
+
+.table-clean th,
+.table-clean td {
+    overflow-wrap: anywhere;
+}
+
+.table-clean .name-cell {
+    overflow-wrap: break-word;
+    word-break: normal !important;
+}
+
+.btn {
+    min-height: 42px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.btn-sm {
+    min-height: 34px;
+    padding: .38rem .72rem !important;
+    font-size: 12.5px !important;
+    line-height: 1.1 !important;
+}
+
+.table-action-btn {
+    min-width: 34px !important;
+}
+
+.progress-action-group {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
+}
+
+.progress-action-btn {
+    min-width: 72px;
+    height: 36px;
+    padding-inline: 11px !important;
+    border-radius: 10px !important;
+}
+
+.progress-action-wide {
+    min-width: 126px;
+}
+
+.table-clean td .progress-action-group {
+    min-width: 300px;
+}
+
+.pagination {
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 1200px) {
+    .dashboard-status-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-status-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .publication-fit-table {
+        min-width: 820px !important;
+    }
+}
+
+
+/* ===== Revisi kerapian lanjutan dari admin_rev_rapikan.docx ===== */
+.table-clean th:first-child,
+.table-clean td:first-child,
+.table-clean .col-no,
+.publication-fit-table th:nth-child(1),
+.publication-fit-table td:nth-child(1) {
+    width: 36px !important;
+    min-width: 36px !important;
+    max-width: 36px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+}
+
+.table-clean thead th:first-child .sort-link,
+.publication-fit-table thead th:first-child .sort-link {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    gap: 3px !important;
+}
+
+.status-chip {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 96px !important;
+    min-width: 96px !important;
+    max-width: 96px !important;
+    min-height: 30px !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    line-height: 1.15 !important;
+    padding: .32rem .42rem !important;
+}
+
+
+.table-clean th,
+.table-clean td {
+    word-break: normal !important;
+}
+
+.table-clean td {
+    overflow-wrap: break-word !important;
+}
+
+.table-clean td .status-chip,
+.table-clean td .compact-badge,
+.table-clean td .date-stack {
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+}
+
+.user-table-fit .col-no {
+    width: 36px !important;
+}
+
+.user-table-fit .col-login {
+    width: 14%;
+}
+
+.user-table-fit .col-name {
+    width: 22%;
+}
+
+.user-table-fit .col-email {
+    width: 23%;
+}
+
+.user-table-fit .col-phone {
+    width: 13%;
+}
+
+.user-table-fit .col-password {
+    width: 18%;
+}
+
+.user-table-fit .col-action {
+    width: 74px;
+}
+
+.team-work-table th,
+.team-work-table td,
+.team-work-table .name-cell {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.team-work-table .col-release-date {
+    width: 126px !important;
+}
+
+.team-work-table .col-action {
+    width: 82px !important;
+}
+
+#assignmentTable + .btn,
+#assignmentTable ~ .btn {
+    margin-top: 14px !important;
+}
+
+.progress-publication-table {
+    table-layout: fixed !important;
+    min-width: 900px;
+}
+
+.progress-publication-table .col-date {
+    width: 110px !important;
+}
+
+.progress-publication-table .col-status {
+    width: 112px !important;
+}
+
+.progress-publication-table .col-action {
+    width: 118px !important;
+}
+
+.progress-publication-table .name-cell {
+    text-align: left !important;
+}
+
+.progress-publication-table .date-stack,
+.monitoring-table .date-stack {
+    min-width: 0 !important;
+    width: 78px !important;
+}
+
+.progress-publication-table small.text-muted.d-block {
+    font-size: 11px !important;
+    line-height: 1.1;
+    margin-top: 4px;
+}
+
+.progress-action-group {
+    min-width: 0 !important;
+    gap: 6px !important;
+}
+
+.table-clean td .progress-action-group {
+    min-width: 0 !important;
+}
+
+.progress-action-group .table-action-btn {
+    width: 34px !important;
+    min-width: 34px !important;
+    height: 34px !important;
+    padding: 0 !important;
+}
+
+.monitoring-table {
+    table-layout: fixed !important;
+    min-width: 960px;
+}
+
+.monitoring-table .col-region,
+.monitoring-table .col-region-cell {
+    width: 145px !important;
+    min-width: 145px !important;
+    max-width: 145px !important;
+    text-align: center !important;
+    line-height: 1.25 !important;
+}
+
+.monitoring-table .col-title {
+    width: auto !important;
+}
+
+.monitoring-table .col-category {
+    width: 78px !important;
+}
+
+.monitoring-table .col-date {
+    width: 108px !important;
+}
+
+.monitoring-table .col-status {
+    width: 108px !important;
+}
+
+.monitoring-table th,
+.monitoring-table td {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.monitoring-table .name-cell {
+    text-align: left !important;
+}
+
+.publication-fit-table .date-stack {
+    min-width: 72px !important;
+}
+
+.publication-fit-table th,
+.publication-fit-table td {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+}
+
+@media (max-width: 1200px) {
+    .dashboard-status-grid {
+        grid-template-columns: repeat(5, minmax(120px, 1fr));
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+}
+
+/* ===== Fix khusus dashboard: kolom nomor harus benar-benar sempit ===== */
+.dashboard-summary-table {
+    table-layout: fixed !important;
+    min-width: 0 !important;
+    width: 100% !important;
+}
+
+.dashboard-summary-table col.col-no {
+    width: 42px !important;
+}
+
+.dashboard-summary-table col.col-title {
+    width: 31% !important;
+}
+
+.dashboard-summary-table col.col-category {
+    width: 82px !important;
+}
+
+.dashboard-summary-table col.col-date {
+    width: 116px !important;
+}
+
+.dashboard-summary-table col.col-check-date {
+    width: 126px !important;
+}
+
+.dashboard-summary-table col.col-status {
+    width: 108px !important;
+}
+
+.dashboard-summary-table th:first-child,
+.dashboard-summary-table td:first-child {
+    width: 42px !important;
+    min-width: 42px !important;
+    max-width: 42px !important;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    text-align: center !important;
+}
+
+.dashboard-summary-table th:first-child .sort-link {
+    width: auto !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    display: inline-flex !important;
+}
+
+.dashboard-summary-table th,
+.dashboard-summary-table td {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.dashboard-summary-table .date-stack {
+    min-width: 0 !important;
+}
+
+@media (max-width: 1200px) {
+    .dashboard-summary-table {
+        min-width: 820px !important;
+    }
+}
+
+/* Revisi v4 - rapikan tabel Progres Publikasi */
+.progress-publication-table {
+    width: 100% !important;
+    min-width: 0 !important;
+    table-layout: fixed !important;
+}
+
+.progress-publication-table col.col-title {
+    width: auto !important;
+}
+
+.progress-publication-table col.col-release-date,
+.progress-publication-table col.col-upload-date {
+    width: 112px !important;
+}
+
+.progress-publication-table col.col-check-start-date,
+.progress-publication-table col.col-start-date {
+    width: 126px !important;
+}
+
+.progress-publication-table col.col-status {
+    width: 112px !important;
+}
+
+.progress-publication-table col.col-action {
+    width: 120px !important;
+}
+
+.progress-publication-table thead th,
+.progress-publication-table tbody td {
+    padding: 9px 8px !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    overflow: hidden !important;
+}
+
+.progress-publication-table thead th {
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    line-height: 1.18 !important;
+    font-size: 12.5px !important;
+}
+
+.progress-publication-table th.col-check-start-date {
+    font-size: 12px !important;
+    letter-spacing: -0.1px;
+}
+
+.progress-publication-table .name-cell {
+    min-width: 0 !important;
+    text-align: left !important;
+    line-height: 1.35 !important;
+    word-break: normal !important;
+    overflow-wrap: anywhere !important;
+}
+
+.progress-publication-table .date-stack {
+    width: auto !important;
+    min-width: 0 !important;
+    display: inline-flex !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+}
+
+.progress-publication-table .date-main,
+.progress-publication-table .date-year,
+.progress-publication-table small.text-muted.d-block {
+    text-align: left !important;
+}
+
+.progress-publication-table .date-main {
+    font-size: 13px !important;
+    line-height: 1.15 !important;
+}
+
+.progress-publication-table .date-year {
+    font-size: 11.5px !important;
+    line-height: 1.1 !important;
+}
+
+.progress-publication-table small.text-muted.d-block {
+    font-size: 10.8px !important;
+    line-height: 1.1 !important;
+    margin-top: 3px !important;
+}
+
+.progress-publication-table .progress-action-group {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    gap: 5px !important;
+}
+
+.progress-publication-table .progress-action-group .table-action-btn {
+    width: 31px !important;
+    min-width: 31px !important;
+    height: 31px !important;
+}
+
+@media (max-width: 1100px) {
+    .progress-publication-table {
+        min-width: 0 !important;
+    }
+}
+
+
+/* Revisi v5 - Monitoring dan Progres lebih rapih */
+.monitoring-table {
+    width: 100% !important;
+    min-width: 980px !important;
+    table-layout: fixed !important;
+}
+
+.monitoring-table col.col-no {
+    width: 38px !important;
+}
+
+.monitoring-table col.col-region {
+    width: 150px !important;
+}
+
+.monitoring-table col.col-title {
+    width: auto !important;
+}
+
+.monitoring-table col.col-category {
+    width: 78px !important;
+}
+
+.monitoring-table col.col-date,
+.monitoring-table col.col-check-date {
+    width: 108px !important;
+}
+
+.monitoring-table col.col-status {
+    width: 112px !important;
+}
+
+.monitoring-table th,
+.monitoring-table td {
+    padding: 10px 9px !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+.monitoring-table th.col-no,
+.monitoring-table td.col-no {
+    width: 38px !important;
+    min-width: 38px !important;
+    max-width: 38px !important;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    white-space: nowrap !important;
+}
+
+.monitoring-table th.col-region,
+.monitoring-table td.col-region-cell {
+    width: 150px !important;
+    min-width: 150px !important;
+    max-width: 150px !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    line-height: 1.22 !important;
+}
+
+.monitoring-table .name-cell {
+    text-align: left !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: anywhere !important;
+    line-height: 1.35 !important;
+    font-weight: 700 !important;
+}
+
+.monitoring-table .col-category-cell {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.monitoring-table .compact-badge {
+    max-width: 68px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    white-space: nowrap !important;
+}
+
+.monitoring-table .date-stack {
+    width: auto !important;
+    min-width: 0 !important;
+    display: inline-flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    line-height: 1.1 !important;
+}
+
+.monitoring-table .date-main {
+    font-size: 13px !important;
+    line-height: 1.1 !important;
+}
+
+.monitoring-table .date-year {
+    font-size: 11.5px !important;
+    line-height: 1.1 !important;
+    margin-top: 2px !important;
+}
+
+.monitoring-table .col-date-cell {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.monitoring-table .status-chip {
+    max-width: 96px !important;
+    min-width: 86px !important;
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+}
+
+.progress-publication-table .date-stack {
+    width: auto !important;
+    min-width: 0 !important;
+    display: inline-flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.progress-publication-table .date-main,
+.progress-publication-table .date-year {
+    text-align: center !important;
+}
+
+.progress-publication-table .remaining-days-chip {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 5px !important;
+    padding: 2px 7px !important;
+    border-radius: 999px !important;
+    background: rgba(100, 116, 139, 0.10) !important;
+    border: 1px solid rgba(100, 116, 139, 0.22) !important;
+    color: #475569 !important;
+    font-size: 10.8px !important;
+    font-weight: 700 !important;
+    line-height: 1.15 !important;
+    white-space: nowrap !important;
+}
+
+.progress-publication-table td:nth-child(3) {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    text-align: center !important;
+}
+
+.progress-publication-table col.col-release-date {
+    width: 118px !important;
+}
+
+.progress-publication-table col.col-upload-date {
+    width: 106px !important;
+}
+
+.progress-publication-table col.col-check-start-date,
+.progress-publication-table col.col-start-date {
+    width: 124px !important;
+}
+
+.progress-publication-table col.col-status {
+    width: 112px !important;
+}
+
+.progress-publication-table col.col-action {
+    width: 112px !important;
+}
+
+/* ===============================
+   RAPINKAN AKSI - KELOLA AKUN PENGGUNA
+================================ */
+
+.user-account-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.user-account-table th,
+.user-account-table td {
+    vertical-align: middle !important;
+}
+
+.user-account-table th.col-no,
+.user-account-table td.col-no {
+    width: 46px !important;
+    min-width: 46px !important;
+    max-width: 46px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    text-align: center !important;
+}
+
+.user-account-table th.col-action,
+.user-account-table td.col-action {
+    width: 105px !important;
+    min-width: 105px !important;
+    max-width: 105px !important;
+    text-align: center !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    overflow: visible !important;
+}
+
+.user-account-table .action-buttons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.user-account-table .action-buttons form {
+    display: inline-flex;
+    margin: 0;
+}
+
+.user-account-table .account-action-btn {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0 !important;
+    border-radius: 9px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.user-account-table .account-action-btn i {
+    margin: 0 !important;
+    font-size: 13px;
+}
+/* ===============================
+   KELOLA PEDOMAN PEMERIKSAAN - CARD SLIDE
+================================ */
+.guideline-page {
+    --guide-primary: #0d6efd;
+    --guide-soft: rgba(13, 110, 253, 0.10);
+    --guide-border: rgba(148, 163, 184, 0.28);
+    --guide-text: #0f172a;
+}
+
+.guideline-hero {
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.12), rgba(14, 165, 233, 0.08), #ffffff);
+    border: 1px solid rgba(13, 110, 253, 0.12);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.07);
+}
+
+.guideline-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.12);
+    color: #0d6efd;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.guideline-add-btn {
+    min-height: 40px;
+    border-radius: 14px;
+    font-weight: 700;
+    box-shadow: 0 12px 26px rgba(13, 110, 253, 0.20);
+}
+
+.guideline-type-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.guideline-type-tab {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 15px 16px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(148, 163, 184, 0.26);
+    text-decoration: none;
+    color: #334155;
+    transition: 0.18s ease;
+}
+
+.guideline-type-tab:hover,
+.guideline-type-tab.active {
+    transform: translateY(-2px);
+    border-color: rgba(13, 110, 253, 0.35);
+    background: #ffffff;
+    color: #0d6efd;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.guideline-type-tab .tab-icon {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: rgba(13, 110, 253, 0.12);
+    color: #0d6efd;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.guideline-type-tab strong,
+.guideline-type-tab small {
+    display: block;
+    line-height: 1.25;
+}
+
+.guideline-type-tab small {
+    color: #64748b;
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.guideline-stat-card {
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 20px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.055);
+    min-height: 86px;
+}
+
+.guideline-stat-card .stat-icon {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 19px;
+    flex-shrink: 0;
+}
+
+.guideline-stat-card small {
+    display: block;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.guideline-stat-card h6 {
+    margin: 3px 0 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.guideline-info-alert {
+    background: rgba(13, 202, 240, 0.13);
+    border: 1px solid rgba(13, 202, 240, 0.28);
+    color: #0f172a;
+    border-radius: 18px;
+}
+
+.guideline-section-block {
+    position: relative;
+}
+
+.guideline-section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.guideline-section-head .section-label {
+    display: inline-flex;
+    color: #0d6efd;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.guideline-section-head .section-count {
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.26);
+    border-radius: 999px;
+    padding: 7px 12px;
+    color: #475569;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.guideline-carousel {
+    padding: 0 48px 34px;
+}
+
+.guideline-slide-card {
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 16px 38px rgba(15, 23, 42, 0.08);
+}
+
+.guideline-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px 22px;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.12), rgba(255, 255, 255, 0.95));
+    border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.guideline-card-header small {
+    color: #0d6efd;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.guideline-card-header h5 {
+    margin: 4px 0 0;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.guideline-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.12);
+    color: #0d6efd;
+    font-size: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.guideline-card-body {
+    padding: 18px;
+    max-height: 560px;
+    overflow-y: auto;
+    background: #f8fafc;
+}
+
+.guideline-card-body.small-card-body {
+    max-height: 430px;
+}
+
+.guideline-detail-item {
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 14px;
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 18px;
+    margin-bottom: 12px;
+}
+
+.guideline-detail-item:last-child {
+    margin-bottom: 0;
+}
+
+.guideline-detail-item.is-muted {
+    opacity: 0.62;
+}
+
+.guideline-detail-item .detail-number {
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 110, 253, 0.11);
+    color: #0d6efd;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.guideline-detail-item .detail-content {
+    min-width: 0;
+}
+
+.guideline-detail-item .detail-text {
+    color: #1f2937;
+    font-size: 13.5px;
+    line-height: 1.55;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.guideline-detail-item .detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.guideline-detail-item .detail-actions {
+    display: inline-flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.guideline-detail-item .detail-actions form {
+    display: inline-flex;
+    margin: 0;
+}
+
+.guideline-icon-btn {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    padding: 0 !important;
+    border-radius: 11px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.guideline-control {
+    width: 38px;
+    opacity: 1;
+}
+
+.guideline-control i {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    color: #0d6efd;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.guideline-indicators {
+    bottom: -10px;
+    margin-bottom: 0;
+}
+
+.guideline-indicators [data-bs-target] {
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background-color: #0d6efd;
+}
+
+.guideline-empty-card {
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #64748b;
+    text-align: center;
+    background: #ffffff;
+    border: 1px dashed rgba(148, 163, 184, 0.45);
+    border-radius: 18px;
+}
+
+.guideline-empty-card i {
+    font-size: 34px;
+    color: #94a3b8;
+}
+
+.guideline-form {
+    background: #ffffff;
+}
+
+.guideline-form textarea {
+    line-height: 1.55;
+}
+
+.guideline-active-check {
+    background: #f8fafc;
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 14px;
+    padding: 12px 14px 12px 38px;
+}
+
+@media (max-width: 992px) {
+    .guideline-type-tabs {
+        grid-template-columns: 1fr;
+    }
+
+    .guideline-carousel {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .guideline-control {
+        display: none;
+    }
+
+    .guideline-detail-item {
+        grid-template-columns: 34px minmax(0, 1fr);
+    }
+
+    .guideline-detail-item .detail-actions {
+        grid-column: 2;
+        justify-content: flex-start;
+    }
+}
+
+/* ===============================
+   TEMPLATE DOKUMEN & TIM PENYUSUN
+================================ */
+.template-manager-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.template-doc-card {
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 22px;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+    overflow: hidden;
+}
+
+.template-doc-head {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.12), rgba(255,255,255,0.92));
+    border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+}
+
+.template-doc-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    background: rgba(13, 110, 253, 0.14);
+    color: #0d6efd;
+}
+
+.template-doc-title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 850;
+    color: #0f172a;
+}
+
+.template-doc-desc {
+    margin: 3px 0 0;
+    color: #64748b;
+    font-size: 12.5px;
+    line-height: 1.45;
+}
+
+.template-doc-body {
+    padding: 18px 20px 20px;
+}
+
+.template-current-file {
+    border: 1px solid rgba(148, 163, 184, 0.26);
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+}
+
+.template-current-file strong {
+    display: block;
+    font-size: 13px;
+    color: #0f172a;
+    word-break: break-word;
+}
+
+.template-current-file small {
+    color: #64748b;
+}
+
+.author-work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.author-upload-card {
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.05);
+    overflow: hidden;
+}
+
+.author-upload-head {
+    padding: 15px 17px;
+    background: linear-gradient(135deg, rgba(13, 202, 240, 0.12), rgba(255,255,255,0.94));
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.author-upload-head h6 {
+    margin: 0;
+    font-weight: 850;
+    font-size: 14px;
+    color: #0f172a;
+}
+
+.author-upload-head small {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.author-upload-body {
+    padding: 16px 17px 18px;
+}
+
+.upload-status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 9px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 850;
+    white-space: nowrap;
+}
+
+.upload-status-pill.done {
+    background: rgba(25, 135, 84, 0.14);
+    color: #0f5132;
+    border: 1px solid rgba(25, 135, 84, 0.28);
+}
+
+.upload-status-pill.waiting {
+    background: rgba(255, 193, 7, 0.18);
+    color: #664d03;
+    border: 1px solid rgba(255, 193, 7, 0.34);
+}
+
+.upload-status-pill.optional {
+    background: rgba(13, 110, 253, 0.12);
+    color: #084298;
+    border: 1px solid rgba(13, 110, 253, 0.28);
+}
+
+.author-file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.author-file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 11px;
+    border-radius: 14px;
+    background: #f8fafc;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.author-file-item .file-name {
+    font-size: 12.5px;
+    font-weight: 750;
+    color: #1f2937;
+    word-break: break-word;
+}
+
+.author-file-item .file-meta {
+    font-size: 11px;
+    color: #64748b;
+}
+
+.template-download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 12.5px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.sprp-card {
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+    overflow: hidden;
+}
+
+.sprp-card-head {
+    padding: 18px 20px;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.13), rgba(255,255,255,0.95));
+    border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.sprp-card-head h5 {
+    margin: 0;
+    font-weight: 850;
+}
+
+.sprp-card-body {
+    padding: 20px;
+}
+
+.completion-panel {
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+    padding: 16px;
+}
+
+.completion-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px dashed rgba(148, 163, 184, 0.35);
+    font-size: 13px;
+}
+
+.completion-item:last-child {
+    border-bottom: 0;
+}
+
+.completion-icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.completion-icon.done {
+    background: rgba(25, 135, 84, 0.16);
+    color: #0f5132;
+}
+
+.completion-icon.waiting {
+    background: rgba(255, 193, 7, 0.18);
+    color: #664d03;
+}
+
+.infographic-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.infographic-thumb {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    background: #f8fafc;
+}
+
+.sprp-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.sprp-detail-item {
+    background: #f8fafc;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 14px;
+    padding: 11px 13px;
+}
+
+.sprp-detail-item small {
+    display: block;
+    color: #64748b;
+    font-size: 11.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+.sprp-detail-item strong {
+    color: #0f172a;
+    font-size: 13px;
+    word-break: break-word;
+}
+
+@media (max-width: 992px) {
+    .template-manager-grid,
+    .author-work-grid,
+    .sprp-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===============================
+   REVISI TEMPLATE SURAT, INPUT PENYUSUN, DAN SPRP MANUAL
+================================ */
+.template-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.template-form-card {
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 22px;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+    overflow: hidden;
+}
+
+.template-form-head {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 18px 20px;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.12), rgba(255,255,255,0.96));
+    border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.template-form-icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: rgba(13, 110, 253, 0.14);
+    color: #0d6efd;
+}
+
+.template-form-icon.success {
+    background: rgba(25, 135, 84, 0.15);
+    color: #198754;
+}
+
+.template-form-head h6 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 850;
+    color: #0f172a;
+}
+
+.template-form-head p {
+    margin: 4px 0 0;
+    font-size: 12.5px;
+    color: #64748b;
+    line-height: 1.45;
+}
+
+.template-form-body {
+    padding: 18px 20px 20px;
+}
+
+.template-current-file.compact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.template-current-file.compact.empty {
+    justify-content: flex-start;
+}
+
+.template-upload-form .input-group .form-control {
+    min-height: 40px;
+}
+
+.author-input-box,
+.sprp-manual-box {
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 22px;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+    overflow: hidden;
+}
+
+.author-input-head {
+    padding: 16px 18px;
+    background: linear-gradient(135deg, rgba(13, 202, 240, 0.12), rgba(255,255,255,0.95));
+    border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.author-input-body {
+    padding: 0;
+}
+
+.author-input-row {
+    display: grid;
+    grid-template-columns: minmax(210px, 1.1fr) minmax(160px, .8fr) minmax(280px, 1.25fr);
+    gap: 14px;
+    align-items: center;
+    padding: 15px 18px;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.95);
+}
+
+.author-input-row:last-child {
+    border-bottom: 0;
+}
+
+.author-input-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 12px;
+    background: rgba(13, 110, 253, 0.12);
+    color: #0d6efd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.author-input-label strong {
+    display: block;
+    font-size: 13.5px;
+    color: #0f172a;
+}
+
+.author-input-label small,
+.author-input-current .file-meta {
+    display: block;
+    font-size: 11.5px;
+    color: #64748b;
+    line-height: 1.35;
+}
+
+.author-input-current .file-name {
+    font-size: 12px;
+    font-weight: 800;
+    color: #1f2937;
+    word-break: break-word;
+}
+
+.template-download-link.compact-link {
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.sprp-manual-title {
+    padding: 16px 18px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.12), rgba(255,255,255,0.95));
+    border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.sprp-manual-title h5 {
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: .02em;
+    font-size: 15px;
+}
+
+.sprp-manual-title small {
+    color: #64748b;
+}
+
+.sprp-manual-box form {
+    padding: 18px;
+}
+
+.sprp-manual-table {
+    border: 1px solid rgba(148, 163, 184, 0.36);
+    border-radius: 16px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.sprp-line {
+    display: grid;
+    grid-template-columns: 34px 210px minmax(0, 1fr);
+    gap: 10px;
+    align-items: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.96);
+}
+
+.sprp-line:last-child {
+    border-bottom: 0;
+}
+
+.sprp-line.full {
+    grid-column: 1 / -1;
+}
+
+.sprp-line.align-top {
+    align-items: start;
+}
+
+.sprp-no {
+    color: #334155;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.sprp-line label {
+    font-size: 13px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0;
+}
+
+.sprp-field.readonly-field {
+    min-height: 32px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background: #f8fafc;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    color: #334155;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.sprp-summary-table {
+    display: grid;
+    grid-template-columns: 1.1fr .7fr .7fr 1.4fr 1.2fr;
+    border: 1px solid rgba(148, 163, 184, 0.36);
+    border-radius: 16px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.sprp-summary-label,
+.sprp-summary-cell {
+    padding: 10px 12px;
+    border-right: 1px solid rgba(226, 232, 240, 0.95);
+    min-height: 72px;
+}
+
+.sprp-summary-cell:last-child {
+    border-right: 0;
+}
+
+.sprp-summary-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f1f5f9;
+    font-weight: 850;
+    font-size: 13px;
+    color: #0f172a;
+}
+
+.sprp-summary-cell label {
+    display: block;
+    font-size: 11.5px;
+    font-weight: 850;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 1200px) {
+    .author-input-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .template-form-grid,
+    .sprp-summary-table {
+        grid-template-columns: 1fr;
+    }
+
+    .template-current-file.compact {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .sprp-line {
+        grid-template-columns: 32px 1fr;
+    }
+
+    .sprp-field {
+        grid-column: 2;
+    }
+
+    .sprp-summary-label,
+    .sprp-summary-cell {
+        border-right: 0;
+        border-bottom: 1px solid rgba(226, 232, 240, 0.95);
+    }
+}
+
+/* ===============================
+   REVISI FINAL UPLOAD TIM PENYUSUN - INPUT PANJANG
+================================ */
+.author-input-body.author-input-card-list {
+    padding: 16px 18px 18px;
+    display: grid;
+    gap: 14px;
+    background: #f8fafc;
+}
+
+.author-upload-card {
+    position: relative;
+    min-width: 0;
+    padding: 17px 18px 18px;
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.045);
+}
+
+.author-upload-status-corner {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    z-index: 2;
+}
+
+.author-upload-status-corner .upload-status-pill {
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+}
+
+.author-upload-title-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-right: 120px;
+    margin-bottom: 11px;
+    min-width: 0;
+}
+
+.author-upload-title-text {
+    min-width: 0;
+}
+
+.author-upload-title-text strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 850;
+    color: #0f172a;
+    line-height: 1.25;
+}
+
+.author-upload-content-grid {
+    display: block;
+    width: 100%;
+    min-width: 0;
+}
+
+.author-upload-left,
+.author-card-upload-form,
+.author-upload-input-line {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.author-card-upload-form {
+    margin: 0;
+}
+
+.author-upload-input-line {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.author-upload-input-line .form-control {
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+    border-radius: 12px !important;
+    border: 1px solid rgba(148, 163, 184, 0.36);
+    background: #ffffff;
+    font-size: 12.5px;
+    box-shadow: none;
+}
+
+.author-upload-input-line .form-control:focus {
+    border-color: rgba(13, 110, 253, 0.55);
+    box-shadow: 0 0 0 0.18rem rgba(13, 110, 253, 0.10);
+}
+
+.author-upload-input-line .author-upload-btn {
+    flex: 0 0 auto;
+    min-width: 122px;
+    height: 42px;
+    border-radius: 12px !important;
+    font-size: 12.5px;
+    font-weight: 850;
+    white-space: nowrap;
+    box-shadow: 0 8px 18px rgba(13, 110, 253, 0.18);
+}
+
+.author-upload-help {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.35;
+    color: #64748b;
+}
+
+.author-locked-upload {
+    padding: 10px 12px;
+    border: 1px dashed rgba(148, 163, 184, 0.45);
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 12.5px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.author-input-row-clean .selected-preview,
+.author-upload-left .selected-preview {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .author-input-body.author-input-card-list {
+        padding: 14px;
+    }
+
+    .author-upload-card {
+        padding: 14px;
+    }
+
+    .author-upload-status-corner {
+        top: 12px;
+        right: 12px;
+    }
+
+    .author-upload-title-line {
+        padding-right: 108px;
+    }
+}
+
+@media (max-width: 576px) {
+    .author-upload-title-line {
+        padding-right: 0;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+
+    .author-upload-input-line {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .author-upload-input-line .author-upload-btn {
+        width: 100%;
+    }
+}
+
+/* ===============================
+   REVISI 14 MEI - UPLOAD PENYUSUN CUSTOM FILE INPUT
+================================ */
+.author-upload-card {
+    padding: 18px 20px 19px !important;
+}
+
+.author-upload-content-grid {
+    display: block !important;
+    width: 100% !important;
+}
+
+.author-upload-left,
+.author-card-upload-form {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+}
+
+.author-upload-input-line {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    gap: 18px !important;
+    margin-top: 2px !important;
+}
+
+.author-file-native {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.author-file-picker {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(148, 163, 184, 0.36) !important;
+    border-radius: 13px !important;
+    background: #ffffff !important;
+    cursor: pointer !important;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .9), inset 0 1px 2px rgba(15, 23, 42, .035) !important;
+}
+
+.author-file-picker:hover {
+    border-color: rgba(13, 110, 253, 0.5) !important;
+}
+
+.author-file-button {
+    flex: 0 0 auto !important;
+    height: 44px !important;
+    min-width: 102px !important;
+    padding: 0 15px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #f1f5f9 !important;
+    color: #1e293b !important;
+    border-right: 1px solid rgba(148, 163, 184, .26) !important;
+    font-size: 12.5px !important;
+    font-weight: 850 !important;
+    white-space: nowrap !important;
+}
+
+.author-file-name {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    padding: 0 14px !important;
+    color: #475569 !important;
+    font-size: 12.8px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.author-upload-input-line .author-upload-btn {
+    flex: 0 0 124px !important;
+    width: 124px !important;
+    height: 44px !important;
+    border-radius: 13px !important;
+    margin-left: 0 !important;
+}
+
+.author-upload-help {
+    margin-top: 8px !important;
+    margin-left: 0 !important;
+}
+
+.template-download-link.compact-link {
+    margin-top: 7px !important;
+}
+
+@media (max-width: 768px) {
+    .author-upload-input-line {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+    }
+
+    .author-upload-input-line .author-upload-btn {
+        width: 100% !important;
+        flex-basis: auto !important;
+    }
+
+    .author-file-picker {
+        width: 100% !important;
+    }
+}
+
+/* ===============================
+   REVISI 15 MEI - PEMERIKSAAN KONTEN & LAYOUT SLIDE
+================================ */
+.review-workspace-card {
+    background: #ffffff;
+    border: 1px solid rgba(203, 213, 225, 0.78);
+    border-radius: 22px;
+    box-shadow: 0 16px 38px rgba(15, 23, 42, 0.07);
+    overflow: hidden;
+}
+
+.review-workspace-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px 24px;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.10), rgba(13, 202, 240, 0.08));
+    border-bottom: 1px solid rgba(203, 213, 225, 0.7);
+}
+
+.review-workspace-header small,
+.review-documents-title small,
+.review-document-item small,
+.review-note-box small,
+.review-final-head small {
+    display: block;
+    color: #64748b;
+    line-height: 1.35;
+}
+
+.review-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.12);
+    color: #0d6efd;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.review-header-badge {
+    flex: 0 0 auto;
+    padding: 9px 13px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid rgba(13, 110, 253, 0.18);
+    color: #0f172a;
+    font-size: 12px;
+    font-weight: 850;
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
+}
+
+.review-documents-panel {
+    margin: 18px 20px 0;
+    padding: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 18px;
+    background: #f8fafc;
+}
+
+.review-documents-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.review-documents-title i {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    background: rgba(13, 110, 253, 0.11);
+    color: #0d6efd;
+    font-size: 18px;
+}
+
+.review-documents-list {
+    display: grid;
+    gap: 10px;
+}
+
+.review-document-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 15px;
+    background: #ffffff;
+    border: 1px solid rgba(226, 232, 240, 0.95);
+}
+
+.review-document-item strong,
+.review-document-item small {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.review-document-item > div {
+    min-width: 0;
+}
+
+.review-document-empty {
+    padding: 12px 14px;
+    border-radius: 14px;
+    color: #64748b;
+    background: #ffffff;
+    border: 1px dashed rgba(148, 163, 184, 0.55);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.review-slide-nav {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 18px 20px 8px;
+}
+
+.review-slide-tab {
+    flex: 0 0 210px;
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    grid-template-areas: "number title" "number status";
+    align-items: center;
+    gap: 1px 10px;
+    text-align: left;
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid rgba(203, 213, 225, 0.9);
+    background: #ffffff;
+    color: #0f172a;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+    transition: .18s ease;
+}
+
+.review-slide-tab span {
+    grid-area: number;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #eff6ff;
+    color: #0d6efd;
+    font-weight: 900;
+}
+
+.review-slide-tab strong {
+    grid-area: title;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.review-slide-tab em {
+    grid-area: status;
+    font-size: 11.5px;
+    font-style: normal;
+    color: #64748b;
+    font-weight: 750;
+}
+
+.review-slide-tab em.saved {
+    color: #198754;
+}
+
+.review-slide-tab em.revision {
+    color: #dc3545;
+}
+
+.review-slide-tab.active {
+    border-color: rgba(13, 110, 253, 0.55);
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.11), #ffffff);
+    transform: translateY(-1px);
+}
+
+.review-slide-area {
+    padding: 14px 20px 20px;
+}
+
+.review-slide {
+    display: none;
+}
+
+.review-slide.active {
+    display: block;
+}
+
+.review-slide form {
+    border: 1px solid rgba(203, 213, 225, 0.76);
+    border-radius: 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.review-slide-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 20px;
+    background: #f8fafc;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.95);
+}
+
+.review-slide-head span {
+    display: block;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 3px;
+}
+
+.review-slide-head h5 {
+    margin: 0;
+    color: #0f172a;
+    font-weight: 900;
+}
+
+.review-saved-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    background: rgba(25, 135, 84, 0.12);
+    color: #11633d;
+    border: 1px solid rgba(25, 135, 84, 0.22);
+    font-size: 11.5px;
+    font-weight: 850;
+    white-space: nowrap;
+}
+
+.review-items-list {
+    display: grid;
+    gap: 12px;
+    padding: 18px 20px;
+}
+
+.review-check-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 160px;
+    gap: 16px;
+    align-items: center;
+    padding: 14px;
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+.review-check-text {
+    min-width: 0;
+}
+
+.review-check-text strong {
+    display: block;
+    color: #0f172a;
+    font-size: 13.5px;
+    font-weight: 900;
+    margin-bottom: 4px;
+}
+
+.review-check-text p {
+    margin: 0;
+    color: #475569;
+    font-size: 12.7px;
+    line-height: 1.45;
+}
+
+.review-yesno-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.review-choice {
+    border-radius: 12px !important;
+    border: 1px solid rgba(148, 163, 184, 0.35) !important;
+    background: #f8fafc !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+    color: #475569 !important;
+    padding: 9px 10px !important;
+}
+
+.btn-check:checked + .review-choice.yes {
+    background: rgba(25, 135, 84, 0.13) !important;
+    border-color: rgba(25, 135, 84, 0.42) !important;
+    color: #11633d !important;
+    box-shadow: 0 0 0 .18rem rgba(25, 135, 84, 0.08) !important;
+}
+
+.btn-check:checked + .review-choice.no {
+    background: rgba(220, 53, 69, 0.12) !important;
+    border-color: rgba(220, 53, 69, 0.42) !important;
+    color: #842029 !important;
+    box-shadow: 0 0 0 .18rem rgba(220, 53, 69, 0.08) !important;
+}
+
+.review-note-box {
+    margin: 0 20px 18px;
+    padding: 14px;
+    border-radius: 16px;
+    background: rgba(255, 193, 7, 0.08);
+    border: 1px solid rgba(255, 193, 7, 0.22);
+}
+
+.review-note-box textarea {
+    border-radius: 14px;
+    resize: vertical;
+}
+
+.review-note-box small {
+    margin-top: 7px;
+}
+
+.review-slide-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px 18px;
+    background: #f8fafc;
+    border-top: 1px solid rgba(226, 232, 240, 0.95);
+}
+
+.review-slide-actions .btn {
+    border-radius: 13px;
+    font-size: 12.5px;
+    font-weight: 850;
+}
+
+.review-final-panel {
+    margin: 0 20px 22px;
+    padding: 16px;
+    border-radius: 18px;
+    border: 1px solid rgba(25, 135, 84, 0.22);
+    background: linear-gradient(135deg, rgba(25, 135, 84, 0.08), #ffffff);
+}
+
+.review-final-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.review-final-head h6 {
+    margin: 0;
+    font-weight: 900;
+    color: #0f172a;
+}
+
+.review-final-panel textarea,
+.review-final-panel select {
+    border-radius: 13px;
+}
+
+.review-member-info {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    color: #0f5132;
+    font-size: 13px;
+}
+
+.review-member-info i {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(25, 135, 84, 0.12);
+    flex: 0 0 auto;
+}
+
+.review-history-item {
+    padding: 0 0 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.95);
+}
+
+.review-history-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.revision-detail-btn {
+    border-radius: 999px;
+    font-size: 11.5px;
+    font-weight: 850;
+    white-space: nowrap;
+}
+
+.revision-modal-content {
+    border: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.revision-modal-content .modal-header {
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.10), rgba(255, 193, 7, 0.08));
+    border-bottom: 1px solid rgba(226, 232, 240, 0.95);
+}
+
+.revision-final-note {
+    padding: 13px 14px;
+    border-radius: 15px;
+    background: #f8fafc;
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    color: #334155;
+}
+
+.revision-slide-card {
+    padding: 15px;
+    border-radius: 17px;
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    margin-bottom: 14px;
+    background: #ffffff;
+}
+
+.revision-slide-card:last-child {
+    margin-bottom: 0;
+}
+
+.revision-slide-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.95);
+}
+
+.revision-slide-head span {
+    display: block;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+
+.revision-slide-head h6 {
+    margin: 2px 0 0;
+    font-weight: 900;
+}
+
+.revision-slide-head small {
+    color: #64748b;
+    text-align: right;
+    font-weight: 750;
+}
+
+.revision-failed-list strong,
+.revision-note-box strong {
+    color: #0f172a;
+    font-size: 13px;
+}
+
+.revision-failed-list ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+}
+
+.revision-failed-list li {
+    margin-bottom: 8px;
+    color: #334155;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.revision-failed-list li span {
+    color: #475569;
+}
+
+.revision-note-box {
+    margin-top: 10px;
+    padding: 12px 13px;
+    border-radius: 14px;
+    background: rgba(255, 193, 7, 0.10);
+    border: 1px solid rgba(255, 193, 7, 0.22);
+    color: #3f3f46;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+@media (max-width: 992px) {
+    .review-workspace-header,
+    .review-slide-head,
+    .review-slide-actions,
+    .review-document-item,
+    .revision-slide-head {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .review-header-badge,
+    .review-saved-pill {
+        width: fit-content;
+    }
+
+    .review-check-item {
+        grid-template-columns: 1fr;
+    }
+
+    .review-slide-tab {
+        flex-basis: 190px;
+    }
+}
+
+@media (max-width: 576px) {
+    .review-workspace-header,
+    .review-documents-panel,
+    .review-slide-area,
+    .review-final-panel {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .review-slide-nav {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .review-workspace-header {
+        padding: 18px;
+    }
+
+    .review-items-list,
+    .review-slide-head,
+    .review-slide-actions {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .review-note-box {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+}
+
+/* ===============================
+   REVISI PEMERIKSAAN - WIZARD ANATOMI / SUB-ANATOMI
+================================ */
+.review-slide-tab {
+    flex: 0 0 235px;
+    grid-template-columns: 36px minmax(0, 1fr);
+    grid-template-areas:
+        "number title"
+        "number subtitle"
+        "number status";
+    min-height: 92px;
+}
+
+.review-slide-tab small {
+    grid-area: subtitle;
+    display: block;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #64748b;
+    font-size: 11.5px;
+    font-weight: 750;
+    line-height: 1.25;
+}
+
+.review-slide-head-clean {
+    background: linear-gradient(135deg, #f8fafc, #ffffff);
+}
+
+.review-slide-head-clean h4 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 23px;
+    line-height: 1.15;
+    font-weight: 950;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.review-slide-head-clean p {
+    margin: 6px 0 0;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 850;
+}
+
+.review-section-caption {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.10);
+    color: #0d6efd;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.review-items-slide-list {
+    gap: 10px;
+}
+
+.review-check-item-compact {
+    grid-template-columns: minmax(0, 1fr) 150px;
+    align-items: flex-start;
+    padding: 13px 14px;
+}
+
+.review-check-item-compact .review-check-text strong {
+    margin-bottom: 7px;
+    color: #0d6efd;
+}
+
+.review-check-item-compact .review-check-text p {
+    color: #334155;
+    font-size: 12.8px;
+    line-height: 1.52;
+}
+
+.review-note-box-bottom {
+    margin-top: 2px;
+    background: #fffdf3;
+}
+
+.review-slide-actions-clean {
+    justify-content: flex-end;
+}
+
+.review-slide-actions-clean .review-save-btn {
+    min-width: 180px;
+}
+
+.review-slide-actions-clean .review-prev-btn,
+.review-slide-actions-clean .review-next-btn {
+    min-width: 112px;
+}
+
+.revision-sub-anatomy {
+    display: block;
+    margin-top: 4px;
+    color: #2563eb !important;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.revision-failed-list li span {
+    display: block;
+    color: #334155;
+    line-height: 1.45;
+}
+
+@media (max-width: 992px) {
+    .review-check-item-compact {
+        grid-template-columns: 1fr;
+    }
+
+    .review-slide-head-clean h4 {
+        font-size: 20px;
+    }
+}
+
+/* ===============================
+   REVISI SIMPAN SEMENTARA PEMERIKSAAN
+   - Boleh simpan walaupun belum semua rincian dipilih
+   - Header slide menampilkan jumlah rincian dan progres terisi
+================================ */
+.review-slide-meta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-width: 230px;
+}
+
+.review-count-pill,
+.review-progress-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    font-size: 11.5px;
+    font-weight: 900;
+    white-space: nowrap;
+    border: 1px solid rgba(148, 163, 184, 0.26);
+}
+
+.review-count-pill {
+    background: rgba(13, 110, 253, 0.10);
+    color: #0d6efd;
+    border-color: rgba(13, 110, 253, 0.22);
+}
+
+.review-progress-pill {
+    background: #f8fafc;
+    color: #64748b;
+}
+
+.review-progress-pill.complete {
+    background: rgba(25, 135, 84, 0.12);
+    color: #11633d;
+    border-color: rgba(25, 135, 84, 0.22);
+}
+
+.review-slide-tab em {
+    white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+    .review-slide-meta {
+        justify-content: flex-start;
+        min-width: 0;
+    }
+}
+
+/* ===============================
+   REVISI HEADER SLIDE PEMERIKSAAN - DIPERBARUI OLEH
+================================ */
+.review-updated-by-text {
+    flex: 0 0 100%;
+    display: block;
+    text-align: right;
+    margin-top: 2px;
+    color: #ef4444;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.review-updated-by-text strong {
+    font-weight: 950;
+}
+
+.review-slide-head-clean {
+    align-items: flex-start;
+}
+
+.review-slide-head-clean .review-slide-meta {
+    padding-top: 2px;
+}
+
+@media (max-width: 992px) {
+    .review-updated-by-text {
+        text-align: left;
+    }
+}
+
+/* ===== Workflow lanjutan: infografis, pimpinan, operator website ===== */
+.workflow-card,
+.leader-hero {
+    border: 1px solid rgba(219, 229, 241, 0.96);
+    border-radius: 24px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fbff 62%, #eef6ff 100%);
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+    padding: 22px;
+    overflow: hidden;
+}
+
+.workflow-card-head,
+.leader-hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.workflow-card .status-chip,
+.leader-hero .status-chip {
+    width: auto !important;
+    min-width: 116px !important;
+    max-width: 150px !important;
+}
+
+.workflow-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 11px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.11);
+    color: #0d47a1;
+    font-size: 11.5px;
+    font-weight: 900;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.workflow-file-grid,
+.release-package-grid,
+.approval-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.workflow-file-card,
+.release-package-step,
+.approval-detail-grid > div,
+.leader-stat-card,
+.approval-list-card,
+.empty-state-soft {
+    border: 1px solid rgba(203, 213, 225, 0.82);
+    border-radius: 19px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: inset 0 1px 0 #ffffff, 0 8px 18px rgba(15, 23, 42, 0.045);
+}
+
+.workflow-file-card {
+    display: flex;
+    gap: 14px;
+    padding: 16px;
+}
+
+.workflow-file-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    background: rgba(13, 110, 253, 0.12);
+    color: #0d6efd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    flex-shrink: 0;
+}
+
+.workflow-file-body small,
+.workflow-file-body strong,
+.workflow-file-body span,
+.release-package-step small,
+.release-package-step strong,
+.leader-stat-card small,
+.leader-stat-card strong,
+.leader-stat-card span {
+    display: block;
+}
+
+.workflow-file-body strong {
+    color: #0f172a;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.workflow-file-body small,
+.release-package-step small,
+.leader-stat-card small,
+.leader-stat-card span {
+    color: var(--bps-muted);
+    line-height: 1.35;
+}
+
+.infographic-review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.infographic-download-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    max-width: 100%;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.09);
+    color: #0d47a1;
+    border: 1px solid rgba(13, 110, 253, 0.20);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.infographic-download-pill:hover {
+    background: rgba(13, 110, 253, 0.16);
+    color: #0d47a1;
+}
+
+.release-package-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.release-package-step {
+    padding: 16px;
+    display: flex;
+    gap: 12px;
+}
+
+.release-package-step > span {
+    width: 31px;
+    height: 31px;
+    min-width: 31px;
+    border-radius: 11px;
+    background: linear-gradient(135deg, #0d6efd, #38bdf8);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.release-package-step strong {
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.release-package-form {
+    padding-top: 16px;
+    border-top: 1px dashed rgba(148, 163, 184, 0.5);
+}
+
+.leader-hero {
+    align-items: center;
+}
+
+.leader-stat-card {
+    min-height: 128px;
+    padding: 18px;
+}
+
+.leader-stat-card strong {
+    color: #0f172a;
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 8px 0;
+}
+
+.leader-stat-card.highlight {
+    background: linear-gradient(135deg, rgba(255, 251, 235, 0.92), #ffffff);
+    border-color: rgba(245, 158, 11, 0.35);
+}
+
+.leader-stat-card.success-state {
+    background: linear-gradient(135deg, rgba(236, 253, 245, 0.94), #ffffff);
+    border-color: rgba(34, 197, 94, 0.35);
+}
+
+.approval-card-list {
+    display: grid;
+    gap: 12px;
+}
+
+.approval-list-card {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+}
+
+.approval-list-card h6 {
+    color: #0f172a;
+    font-weight: 800;
+    margin: 8px 0 4px;
+    line-height: 1.35;
+}
+
+.approval-list-card-large {
+    align-items: stretch;
+}
+
+.approval-card-main {
+    min-width: 0;
+    flex: 1;
+}
+
+.approval-status-line {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.approval-meta-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    color: var(--bps-muted);
+    font-size: 12.5px;
+    font-weight: 700;
+}
+
+.approval-meta-grid i {
+    color: #0d6efd;
+    margin-right: 4px;
+}
+
+.approval-detail-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.approval-detail-grid > div {
+    padding: 14px;
+}
+
+.approval-detail-grid small,
+.approval-detail-grid strong {
+    display: block;
+}
+
+.approval-detail-grid small {
+    color: var(--bps-muted);
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.approval-detail-grid strong {
+    color: #0f172a;
+    line-height: 1.25;
+}
+
+.empty-state-soft {
+    padding: 34px 20px;
+    text-align: center;
+    color: var(--bps-muted);
+}
+
+.empty-state-soft i {
+    display: block;
+    color: #0d6efd;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.empty-state-soft strong,
+.empty-state-soft span {
+    display: block;
+}
+
+.empty-state-soft strong {
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.approval-team-pill {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.approval-team-pill span {
+    color: var(--bps-muted);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.approval-team-pill strong {
+    text-align: right;
+    color: #0f172a;
+}
+
+@media (max-width: 992px) {
+    .workflow-card-head,
+    .leader-hero,
+    .approval-list-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .workflow-file-grid,
+    .release-package-grid,
+    .approval-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Pimpinan dashboard dan laman siap rilis ===== */
+.leader-dashboard-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.leader-approval-table col.col-category {
+    width: 82px !important;
+}
+
+.leader-approval-table col.col-date {
+    width: 116px !important;
+}
+
+.leader-approval-table col.col-status {
+    width: 112px !important;
+}
+
+.leader-approval-table col.col-action {
+    width: 62px !important;
+}
+
+.leader-approval-table th,
+.leader-approval-table td {
+    text-align: center !important;
+}
+
+.leader-approval-table .name-cell {
+    text-align: left !important;
+}
+
+.ready-compact-card {
+    align-items: flex-start;
+}
+
+.ready-release-list {
+    display: grid;
+    gap: 18px;
+}
+
+.ready-release-card .card-header {
+    padding-bottom: 14px !important;
+}
+
+.ready-release-title-block {
+    min-width: 0;
+    flex: 1;
+}
+
+.ready-release-material-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.ready-material-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-height: 138px;
+    padding: 15px;
+    border-radius: 18px;
+    border: 1px solid rgba(203, 213, 225, 0.88);
+    background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+    box-shadow: inset 0 1px 0 #ffffff, 0 8px 18px rgba(15, 23, 42, 0.045);
+}
+
+.ready-material-card.is-available {
+    border-color: rgba(13, 110, 253, 0.22);
+}
+
+.ready-material-card.is-missing {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    opacity: .76;
+}
+
+.ready-material-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 110, 253, 0.11);
+    color: #0d6efd;
+    font-size: 20px;
+}
+
+.ready-material-card.is-missing .ready-material-icon {
+    background: rgba(148, 163, 184, 0.18);
+    color: #64748b;
+}
+
+.ready-material-body {
+    min-width: 0;
+}
+
+.ready-material-body strong,
+.ready-material-body small,
+.ready-material-body span {
+    display: block;
+}
+
+.ready-material-body strong {
+    color: #0f172a;
+    font-size: 14px;
+    line-height: 1.25;
+    margin-bottom: 4px;
+}
+
+.ready-material-body small,
+.ready-material-body span {
+    color: var(--bps-muted);
+    font-size: 12px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.ready-release-review-strip {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 15px;
+    border: 1px dashed rgba(148, 163, 184, 0.55);
+    border-radius: 18px;
+    background: #fbfdff;
+}
+
+.ready-review-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 7px;
+    max-width: 62%;
+}
+
+.ready-review-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.10);
+    border: 1px solid rgba(13, 110, 253, 0.20);
+    color: #0d47a1;
+    font-size: 11.5px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+@media (max-width: 1200px) {
+    .leader-dashboard-grid {
+        grid-template-columns: repeat(4, minmax(160px, 1fr));
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .ready-release-material-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .leader-dashboard-grid,
+    .ready-release-material-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ready-release-review-strip {
+        flex-direction: column;
+    }
+
+    .ready-review-pills {
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+}
+
+/* ===== Revisi global status dan admin batch Global+aDMIN ===== */
+.status-chip.status-penyusunan,
+.status-chip.status-pengajuan-rilis {
+    color: #17437a !important;
+    border-color: rgba(37, 99, 235, .26) !important;
+    background: linear-gradient(135deg, rgba(219,234,254,.96), rgba(191,219,254,.88)) !important;
+}
+
+.status-chip.status-pemeriksaan-konten {
+    color: #6d3b00 !important;
+    border-color: rgba(245,158,11,.35) !important;
+    background: linear-gradient(135deg, rgba(254,243,199,.98), rgba(253,230,138,.88)) !important;
+}
+
+.status-chip.status-pemeriksaan-layout {
+    color: #5b21b6 !important;
+    border-color: rgba(124,58,237,.30) !important;
+    background: linear-gradient(135deg, rgba(237,233,254,.98), rgba(221,214,254,.88)) !important;
+}
+
+.status-chip.status-pemeriksaan-infografis {
+    color: #075985 !important;
+    border-color: rgba(14,165,233,.34) !important;
+    background: linear-gradient(135deg, rgba(224,242,254,.98), rgba(186,230,253,.88)) !important;
+}
+
+.status-chip.status-persetujuan-pimpinan {
+    color: #7f1d1d !important;
+    border-color: rgba(239,68,68,.30) !important;
+    background: linear-gradient(135deg, rgba(254,226,226,.98), rgba(254,202,202,.86)) !important;
+}
+
+.status-chip.status-finalisasi-rilis {
+    color: #064e3b !important;
+    border-color: rgba(16,185,129,.30) !important;
+    background: linear-gradient(135deg, rgba(209,250,229,.98), rgba(167,243,208,.86)) !important;
+}
+
+.status-chip.status-siap-rilis {
+    color: #063b22 !important;
+    border-color: rgba(34,197,94,.38) !important;
+    background: linear-gradient(135deg, rgba(187,247,208,.98), rgba(134,239,172,.88)) !important;
+}
+
+.progress-header-filter {
+    min-width: 260px;
+}
+
+.progress-header-filter .form-select {
+    min-width: 260px;
+}
+
+/* Detail publikasi - versi dokumen geser */
+.publication-document-grid > [class*="col-"] {
+    display: flex;
+}
+
+.publication-doc-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, .065);
+    overflow: hidden;
+}
+
+.publication-doc-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 16px 18px;
+    background: linear-gradient(135deg, rgba(13,110,253,.10), rgba(255,255,255,.96));
+    border-bottom: 1px solid rgba(148, 163, 184, .22);
+}
+
+.publication-doc-head .doc-title-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 0;
+}
+
+.publication-doc-head .doc-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13,110,253,.12);
+    color: #0d6efd;
+    font-size: 18px;
+}
+
+.publication-doc-head h6 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 850;
+    color: #0f172a;
+}
+
+.publication-doc-head small {
+    display: block;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.publication-doc-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 17px 18px;
+}
+
+.document-version-strip {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px 2px 8px;
+    scroll-snap-type: x proximity;
+}
+
+.document-version-card {
+    flex: 0 0 245px;
+    scroll-snap-align: start;
+    border: 1px solid rgba(148, 163, 184, .25);
+    border-radius: 17px;
+    background: linear-gradient(180deg, #ffffff, #f8fafc);
+    padding: 13px 14px;
+    min-height: 142px;
+    display: flex;
+    flex-direction: column;
+}
+
+.document-version-card strong {
+    color: #0f172a;
+    font-size: 12.8px;
+    line-height: 1.32;
+    word-break: break-word;
+}
+
+.document-version-card small {
+    color: #64748b;
+    font-size: 11.4px;
+    line-height: 1.35;
+    margin-top: 7px;
+}
+
+.version-badge {
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, .12);
+    color: #0d6efd;
+    font-weight: 900;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.document-empty-note {
+    min-height: 118px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 18px;
+    border: 1px dashed rgba(148, 163, 184, .42);
+    color: #64748b;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.document-empty-note i {
+    font-size: 28px;
+    color: #94a3b8;
+}
+
+.infographic-preview-panel {
+    flex: 1;
+    min-height: 230px;
+    border-radius: 18px;
+    border: 1px solid rgba(148, 163, 184, .25);
+    background: linear-gradient(135deg, #f8fafc, #eff6ff);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infographic-preview-panel img {
+    width: 100%;
+    height: 100%;
+    min-height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.infographic-preview-panel.is-empty {
+    flex-direction: column;
+    gap: 6px;
+    color: #64748b;
+    text-align: center;
+    padding: 18px;
+}
+
+.infographic-preview-panel.is-empty i {
+    font-size: 34px;
+    color: #94a3b8;
+}
+
+.preview-open-btn {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    box-shadow: 0 10px 22px rgba(13, 110, 253, .22) !important;
+}
+
+/* Timeline log history */
+.history-hero-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 24px;
+    border: 1px solid rgba(13, 110, 253, .12);
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.12), rgba(14, 165, 233, 0.08), #ffffff);
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.07);
+}
+
+.history-eyebrow,
+.knowledge-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.12);
+    color: #0d6efd;
+    font-size: 12px;
+    font-weight: 850;
+    margin-bottom: 10px;
+}
+
+.activity-timeline {
+    position: relative;
+    padding-left: 8px;
+}
+
+.timeline-entry {
+    position: relative;
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 14px;
+    padding-bottom: 18px;
+}
+
+.timeline-entry:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 21px;
+    top: 44px;
+    bottom: -6px;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(13,110,253,.35), rgba(148,163,184,.16));
+}
+
+.timeline-marker {
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: #0d6efd;
+    border: 1px solid rgba(13, 110, 253, .18);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, .08);
+    z-index: 1;
+}
+
+.timeline-card {
+    padding: 15px 16px;
+    border: 1px solid rgba(148, 163, 184, .23);
+    border-radius: 19px;
+    background: #ffffff;
+    box-shadow: 0 10px 26px rgba(15, 23, 42, .052);
+}
+
+.timeline-card h6 {
+    margin: 0;
+    color: #0f172a;
+    font-weight: 850;
+    font-size: 14px;
+}
+
+.timeline-card small {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.timeline-description {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: #f8fafc;
+    color: #334155;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Admin bantuan upload penyusun */
+.admin-author-upload-card {
+    position: relative;
+    padding: 18px;
+}
+
+.author-upload-status-corner {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.author-upload-title-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding-right: 110px;
+    margin-bottom: 13px;
+}
+
+.author-upload-title-text strong {
+    display: block;
+    color: #0f172a;
+    font-size: 14px;
+    font-weight: 850;
+}
+
+.author-upload-content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+}
+
+.author-upload-input-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.author-file-picker {
+    flex: 1;
+    min-width: 230px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    overflow: hidden;
+    border: 1px solid #d6e0ec;
+    border-radius: 13px;
+    background: #ffffff;
+    min-height: 40px;
+}
+
+.author-file-native {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.author-file-button {
+    min-height: 40px;
+    padding: 0 12px;
+    display: inline-flex;
+    align-items: center;
+    background: #f1f5f9;
+    color: #334155;
+    font-weight: 850;
+    border-right: 1px solid #d6e0ec;
+    white-space: nowrap;
+}
+
+.author-file-name {
+    min-width: 0;
+    padding: 0 12px;
+    color: #64748b;
+    font-size: 12.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.author-upload-help {
+    display: block;
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.author-locked-upload {
+    padding: 12px 13px;
+    border: 1px dashed rgba(148,163,184,.40);
+    border-radius: 14px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 12.5px;
+}
+
+.admin-author-version-strip {
+    margin-top: 12px;
+}
+
+/* Custom card pedoman */
+.custom-guideline-header {
+    align-items: center !important;
+}
+
+.custom-guideline-actions {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+.custom-guideline-actions form {
+    display: inline-flex;
+    margin: 0;
+}
+
+/* Knowledge card layout */
+.knowledge-hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 24px;
+    border: 1px solid rgba(13, 110, 253, .12);
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.12), rgba(14, 165, 233, 0.08), #ffffff);
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.07);
+}
+
+.knowledge-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.knowledge-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 265px;
+    padding: 18px;
+    border: 1px solid rgba(148, 163, 184, .24);
+    border-radius: 23px;
+    background: #ffffff;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, .065);
+    transition: .18s ease;
+}
+
+.knowledge-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 44px rgba(15, 23, 42, .10);
+}
+
+.knowledge-card.is-muted {
+    opacity: .68;
+}
+
+.knowledge-card-top,
+.knowledge-card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.knowledge-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+    background: rgba(13, 110, 253, .12);
+    color: #0d6efd;
+    font-size: 20px;
+}
+
+.knowledge-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.knowledge-category {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: rgba(13,110,253,.10);
+    color: #0d6efd;
+    font-size: 11px;
+    font-weight: 850;
+}
+
+.knowledge-card-body {
+    flex: 1;
+}
+
+.knowledge-card-body h5 {
+    font-size: 15.5px;
+    line-height: 1.3;
+    font-weight: 900;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.knowledge-card-body p {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.knowledge-link-preview {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 9px 11px;
+    border-radius: 14px;
+    background: #f8fafc;
+    border: 1px solid rgba(148, 163, 184, .22);
+    color: #475569;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.knowledge-link-preview span {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.knowledge-empty {
+    grid-column: 1 / -1;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: #64748b;
+    text-align: center;
+    background: #ffffff;
+    border: 1px dashed rgba(148, 163, 184, .45);
+    border-radius: 23px;
+}
+
+.knowledge-empty i {
+    font-size: 38px;
+    color: #94a3b8;
+}
+
+@media (max-width: 1200px) {
+    .knowledge-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .knowledge-hero,
+    .history-hero-card {
+        flex-direction: column;
+    }
+
+    .knowledge-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .progress-header-filter,
+    .progress-header-filter .form-select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .sprp-summary-table {
+        grid-template-columns: 1fr !important;
+    }
+
+    .sprp-summary-label,
+    .sprp-summary-cell {
+        border-right: 0 !important;
+        border-bottom: 1px solid rgba(226, 232, 240, .95);
+    }
+}
+
+/* Detail progres publikasi - slider versi dokumen per card */
+.document-version-slider-card .author-upload-body {
+    min-height: 132px;
+}
+
+.version-slider-shell {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.version-slide-stage {
+    min-width: 0;
+}
+
+.version-slide {
+    display: none;
+    animation: versionSlideFade .18s ease-in-out;
+}
+
+.version-slide.is-active {
+    display: block;
+}
+
+.version-nav-btn {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 999px;
+    border: 1px solid rgba(13, 110, 253, .28);
+    background: linear-gradient(135deg, #ffffff, #eef5ff);
+    color: #0d6efd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, .08);
+    transition: .18s ease;
+}
+
+.version-nav-btn:hover {
+    background: #0d6efd;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.version-slider-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 11px;
+    padding-top: 10px;
+    border-top: 1px dashed rgba(148, 163, 184, .38);
+    color: #64748b;
+    font-size: 12px;
+}
+
+.version-slider-footer span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, .10);
+    color: #0d6efd;
+    font-weight: 900;
+}
+
+.version-slider-footer small {
+    color: #64748b;
+    text-align: right;
+}
+
+.document-version-slider-card .author-file-item {
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.document-version-slider-card .author-file-item .d-flex {
+    min-width: 155px;
+}
+
+@keyframes versionSlideFade {
+    from { opacity: .15; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 575.98px) {
+    .version-slider-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .version-nav-btn {
+        display: none;
+    }
+
+    .document-version-slider-card .author-file-item {
+        flex-direction: column;
+    }
+
+    .document-version-slider-card .author-file-item .d-flex {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .document-version-slider-card .author-file-item .btn {
+        flex: 1;
+    }
+}
+
+/* ===== Revisi admin v1 ===== */
+.progress-header-filter-wide {
+    max-width: 720px;
+}
+
+.progress-header-filter .progress-search-input,
+.progress-header-filter .form-control {
+    min-width: 250px;
+}
+
+.document-head-actions {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.version-counter-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, .10);
+    color: #0d6efd;
+    border: 1px solid rgba(13, 110, 253, .22);
+    font-size: 11.5px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .progress-header-filter-wide {
+        width: 100%;
+        max-width: 100%;
+        justify-content: stretch !important;
+    }
+
+    .progress-header-filter .progress-search-input,
+    .progress-header-filter .form-control,
+    .progress-header-filter .form-select,
+    .progress-header-filter .btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .document-head-actions {
+        justify-content: flex-start;
+    }
+}
+
+/* ===== Revisi admin v2 ===== */
+.progress-filter-row {
+    width: min(100%, 780px);
+}
+
+.progress-filter-row .progress-filter-control {
+    flex: 0 0 245px;
+    min-width: 245px;
+}
+
+.progress-filter-row .progress-search-input {
+    flex: 1 1 280px;
+    min-width: 260px;
+}
+
+.progress-filter-row .progress-filter-btn {
+    flex: 0 0 auto;
+    min-width: 112px;
+    white-space: nowrap;
+}
+
+.monitoring-filter-row .form-select,
+.monitoring-filter-row .form-control,
+.monitoring-filter-row .btn {
+    min-height: 42px;
+}
+
+.guideline-context-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.guideline-context-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 15px 16px;
+    border-radius: 18px;
+    border: 1px solid rgba(148, 163, 184, .26);
+    background: linear-gradient(135deg, #ffffff, #f8fafc);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, .055);
+    min-height: 82px;
+}
+
+.guideline-context-card .context-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.guideline-context-card .context-icon.primary {
+    color: #0d6efd;
+    background: rgba(13, 110, 253, .11);
+}
+
+.guideline-context-card .context-icon.info {
+    color: #0284c7;
+    background: rgba(14, 165, 233, .12);
+}
+
+.guideline-context-card .context-icon.success {
+    color: #047857;
+    background: rgba(16, 185, 129, .13);
+}
+
+.guideline-context-card small {
+    display: block;
+    color: #64748b;
+    font-size: 11.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    margin-bottom: 3px;
+}
+
+.guideline-context-card strong {
+    display: block;
+    color: #0f172a;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.28;
+    word-break: break-word;
+}
+
+@media (max-width: 992px) {
+    .guideline-context-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .progress-filter-row {
+        width: 100%;
+    }
+
+    .progress-filter-row .progress-filter-control,
+    .progress-filter-row .progress-search-input,
+    .progress-filter-row .progress-filter-btn {
+        flex: 1 1 100%;
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* ===== Revisi pegawai v1: dokumen, riwayat, dan pemeriksaan ===== */
+.employee-document-slider-list {
+    display: grid;
+    gap: 14px;
+}
+
+.employee-document-version-card {
+    border: 1px solid rgba(226, 232, 240, .95);
+    border-radius: 16px;
+    background: linear-gradient(135deg, #ffffff, #f8fbff);
+    padding: 13px;
+    overflow: hidden;
+}
+
+.employee-document-version-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed rgba(148, 163, 184, .34);
+}
+
+.employee-document-version-head strong,
+.employee-document-version-head small {
+    display: block;
+}
+
+.employee-document-version-head strong {
+    color: #0f172a;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.employee-document-version-head small {
+    color: #64748b;
+    font-size: 11.5px;
+    margin-top: 2px;
+}
+
+.employee-version-slider-shell {
+    gap: 8px;
+}
+
+.employee-document-version-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    min-width: 0;
+}
+
+.employee-document-file-icon {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    border-radius: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 110, 253, .10);
+    color: #0d6efd;
+    font-size: 17px;
+}
+
+.employee-document-file-info {
+    min-width: 0;
+}
+
+.employee-document-file-info span {
+    display: inline-flex;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, .08);
+    color: #0d6efd;
+    font-size: 11px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.employee-document-file-info strong {
+    display: block;
+    max-width: 100%;
+    color: #0f172a;
+    font-size: 12.7px;
+    line-height: 1.25;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.employee-document-file-info small {
+    display: block;
+    margin-top: 4px;
+    color: #64748b;
+    font-size: 11.5px;
+    line-height: 1.35;
+}
+
+.employee-document-version-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.employee-version-slider-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.employee-version-slider-footer span {
+    min-width: 52px;
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, .10);
+    color: #0d6efd;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.review-document-card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.review-document-card {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas: "icon content" "action action";
+    gap: 10px 12px;
+    align-items: start;
+    padding: 14px;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid rgba(226, 232, 240, .95);
+    box-shadow: 0 8px 18px rgba(15, 23, 42, .04);
+}
+
+.review-document-icon {
+    grid-area: icon;
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 110, 253, .10);
+    color: #0d6efd;
+    font-size: 18px;
+}
+
+.review-document-content {
+    grid-area: content;
+    min-width: 0;
+}
+
+.review-document-content strong,
+.review-document-content span,
+.review-document-content small {
+    display: block;
+}
+
+.review-document-content strong {
+    color: #0f172a;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.review-document-content span {
+    margin-top: 3px;
+    color: #0d6efd;
+    font-size: 11.5px;
+    font-weight: 900;
+}
+
+.review-document-content small {
+    margin-top: 3px;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.35;
+    word-break: break-word;
+}
+
+.review-document-card .btn {
+    grid-area: action;
+    width: 100%;
+    border-radius: 12px;
+    font-weight: 850;
+}
+
+.review-history-pager .btn:disabled,
+.version-nav-btn:disabled {
+    opacity: .45;
+    cursor: not-allowed;
+}
+
+@media (max-width: 575.98px) {
+    .employee-version-slider-shell {
+        grid-template-columns: 1fr;
+    }
+}
+
+.employee-version-slider-shell.single-version {
+    grid-template-columns: 1fr;
+}
+
+/* Notifikasi */
+.notification-menu {
+    width: 360px;
+    max-width: calc(100vw - 24px);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.notification-list {
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    display: flex;
+    gap: 12px;
+    padding: 12px 14px;
+    white-space: normal;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+}
+
+.notification-item:hover {
+    background: #f3f8ff;
+}
+
+.notification-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    background: rgba(13, 110, 253, 0.12);
+    color: #0d6efd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.notification-title {
+    font-size: 13px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.notification-message {
+    font-size: 12px;
+    line-height: 1.35;
+    color: #475569;
+}
+
+.notification-time {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+/* Revisi monitoring BPS - rekap kabupaten/kota */
+.monitoring-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.monitoring-summary-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 18px;
+    border: 1px solid rgba(148, 163, 184, .22);
+    background: linear-gradient(135deg, #ffffff, #f8fbff);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, .055);
+}
+
+.monitoring-summary-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.monitoring-summary-card small {
+    display: block;
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 2px;
+}
+
+.monitoring-summary-card strong {
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+    color: #0f172a;
+}
+
+.monitoring-legend {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.monitoring-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.monitoring-legend i {
+    font-size: 8px;
+}
+
+.monitoring-month-table {
+    min-width: 1280px;
+    table-layout: fixed;
+    margin-bottom: 0;
+}
+
+.monitoring-month-table th,
+.monitoring-month-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 7px;
+    font-size: 12px;
+}
+
+.monitoring-month-table th:nth-child(1) {
+    width: 70px;
+}
+
+.monitoring-month-table th:nth-child(2) {
+    width: 170px;
+}
+
+.monitoring-month-table th:last-child {
+    width: 96px;
+}
+
+.monitoring-region-name {
+    text-align: left !important;
+    white-space: normal;
+    line-height: 1.25;
+}
+
+.monitoring-month-cell {
+    border-radius: 13px;
+    padding: 6px 5px;
+    border: 1px solid rgba(148, 163, 184, .28);
+    background: #f8fafc;
+    line-height: 1.1;
+}
+
+.monitoring-month-cell.is-complete {
+    background: rgba(34, 197, 94, .10);
+    border-color: rgba(34, 197, 94, .28);
+}
+
+.monitoring-month-cell.has-warning {
+    background: rgba(245, 158, 11, .13);
+    border-color: rgba(245, 158, 11, .35);
+}
+
+.monitoring-month-main {
+    display: block;
+    font-weight: 800;
+    color: #0f172a;
+    font-size: 13px;
+}
+
+.monitoring-month-cell small,
+.monitoring-total-stack small {
+    display: block;
+    color: #64748b;
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+.monitoring-total-stack {
+    line-height: 1.1;
+}
+
+.monitoring-total-stack strong {
+    display: block;
+    color: #0f172a;
+}
+
+.monitoring-detail-table col.col-complete {
+    width: 230px !important;
+}
+
+.monitoring-date-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.monitoring-date-chips span {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, .35);
+    background: linear-gradient(180deg, #f8fafc, #eef2f7);
+    padding: 3px 8px;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #334155;
+    line-height: 1;
+}
+
+.monitoring-complete-cell {
+    text-align: left !important;
+}
+
+.monitoring-complete-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    border-radius: 14px;
+    padding: 8px 10px;
+    border: 1px solid rgba(148, 163, 184, .25);
+    background: #f8fafc;
+}
+
+.monitoring-complete-head.complete {
+    background: rgba(34, 197, 94, .10);
+    border-color: rgba(34, 197, 94, .26);
+    color: #166534;
+}
+
+.monitoring-complete-head.warning {
+    background: rgba(245, 158, 11, .13);
+    border-color: rgba(245, 158, 11, .32);
+    color: #92400e;
+}
+
+.monitoring-complete-head strong {
+    font-size: 13px;
+}
+
+.monitoring-complete-head span {
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.monitoring-missing-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 7px;
+}
+
+.monitoring-missing-list span {
+    display: inline-flex;
+    border-radius: 999px;
+    background: rgba(248, 113, 113, .13);
+    color: #b91c1c;
+    border: 1px solid rgba(248, 113, 113, .25);
+    padding: 3px 7px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+    .monitoring-summary-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .monitoring-summary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===============================
+   REVISI BIMBINGAN 3 - INPUT FILE/LINK SATU BOX
+================================ */
+.author-file-link-box {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(148, 163, 184, 0.42) !important;
+    border-radius: 13px !important;
+    background: #ffffff !important;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .9), inset 0 1px 2px rgba(15, 23, 42, .035) !important;
+}
+
+.author-file-link-box:focus-within {
+    border-color: rgba(13, 110, 253, 0.55) !important;
+    box-shadow: 0 0 0 0.18rem rgba(13, 110, 253, 0.10) !important;
+}
+
+.author-file-link-box .author-file-button {
+    height: 44px !important;
+    min-width: 98px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    cursor: pointer !important;
+}
+
+.author-link-inline-input {
+    flex: 1 1 auto !important;
+    min-width: 220px !important;
+    height: 44px !important;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 12px !important;
+    font-size: 12.8px !important;
+    font-weight: 700 !important;
+    color: #334155 !important;
+    background: #ffffff !important;
+}
+
+.author-link-inline-input.has-selected-file-placeholder::placeholder {
+    color: #0f5132 !important;
+    opacity: 1 !important;
+}
+
+.author-link-inline-input.is-invalid {
+    background: #fff5f5 !important;
+}
+
+
+@media (max-width: 768px) {
+    .author-file-link-box {
+        width: 100% !important;
+        flex-wrap: wrap !important;
+    }
+
+    .author-file-link-box .author-file-button,
+    .author-link-inline-input {
+        flex: 1 1 100% !important;
+        width: 100% !important;
+        border-left: 0 !important;
+    }
+
+}
+
+/* Revisi layout pemeriksaan: dokumen & riwayat tetap 2 kolom, rincian slide full width */
+.review-workspace-summary-card .review-documents-panel {
+    margin-bottom: 18px;
+}
+
+.review-workspace-details-card {
+    width: 100%;
+}
+
+.review-workspace-details-card .review-slide-nav {
+    padding-top: 20px;
+}
+
+/* Revisi terbaru - tabel publikasi tanpa kolom nomor */
+.publication-fit-table {
+    min-width: 0 !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+}
+
+.publication-fit-table th:first-child,
+.publication-fit-table td:first-child,
+.publication-fit-table.table-clean th:first-child,
+.publication-fit-table.table-clean td:first-child {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    white-space: normal !important;
+    text-align: left !important;
+}
+
+.publication-fit-table .name-cell {
+    text-align: left !important;
+}
+
+.publication-fit-table col.col-title { width: 27% !important; }
+.publication-fit-table col.col-category { width: 9% !important; }
+.publication-fit-table col.col-date,
+.publication-fit-table col.col-check-date,
+.publication-fit-table col.col-start-date { width: 11.5% !important; }
+.publication-fit-table col.col-status { width: 14% !important; }
+.publication-fit-table col.col-action { width: 11% !important; }
+
+.publication-management-table col.col-title { width: 24% !important; }
+.publication-management-table col.col-action { width: 10% !important; }
+
+@media (max-width: 768px) {
+    .publication-fit-table {
+        min-width: 0 !important;
+    }
+}
+.publication-fit-table td:nth-child(2) {
+    text-align: center !important;
+}
+
+.publication-fit-table .name-cell {
+    text-align: left !important;
+}
+
+/* Revisi terbaru - patenkan kerapian tabel Progres Publikasi dan kelengkapan */
+.progress-publication-table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+.progress-publication-table col.col-title {
+    width: 32% !important;
+}
+
+.progress-publication-table col.col-release-date {
+    width: 96px !important;
+}
+
+.progress-publication-table col.col-upload-date {
+    width: 94px !important;
+}
+
+.progress-publication-table col.col-check-start-date,
+.progress-publication-table col.col-start-date {
+    width: 98px !important;
+}
+
+.progress-publication-table col.col-status {
+    width: 108px !important;
+}
+
+.progress-publication-table col.col-action {
+    width: 104px !important;
+}
+
+.progress-publication-table thead th,
+.progress-publication-table tbody td {
+    padding: 8px 6px !important;
+    vertical-align: middle !important;
+}
+
+.progress-publication-table thead th {
+    font-size: 11.6px !important;
+    line-height: 1.12 !important;
+    letter-spacing: -.12px !important;
+}
+
+.progress-publication-table .name-cell {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    font-size: 13px !important;
+    line-height: 1.28 !important;
+    font-weight: 800 !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+}
+
+.progress-publication-table .date-stack {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    text-align: center !important;
+}
+
+.progress-publication-table .date-main {
+    font-size: 12px !important;
+    line-height: 1.12 !important;
+    white-space: nowrap !important;
+}
+
+.progress-publication-table .date-year {
+    font-size: 10.5px !important;
+    line-height: 1.05 !important;
+}
+
+.progress-publication-table .remaining-days-chip {
+    margin-top: 4px !important;
+    padding: 2px 6px !important;
+    font-size: 10px !important;
+    line-height: 1.05 !important;
+}
+
+.progress-publication-table .status-chip {
+    max-width: 96px !important;
+    min-width: 0 !important;
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+    font-size: 10.5px !important;
+    white-space: normal !important;
+    line-height: 1.08 !important;
+}
+
+.progress-publication-table .progress-action-group {
+    gap: 4px !important;
+}
+
+.progress-publication-table .progress-action-group .table-action-btn {
+    width: 29px !important;
+    min-width: 29px !important;
+    height: 29px !important;
+    padding: 0 !important;
+}
+
+.monitoring-missing-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 5px !important;
+    align-items: stretch !important;
+}
+
+.monitoring-missing-list span {
+    justify-content: center !important;
+    text-align: center !important;
+    min-height: 24px !important;
+    padding: 4px 7px !important;
+    line-height: 1.1 !important;
+    white-space: normal !important;
+}
+
+@media (max-width: 1200px) {
+    .progress-publication-table col.col-title {
+        width: 30% !important;
+    }
+
+    .progress-publication-table .date-main {
+        font-size: 11.5px !important;
+    }
+}
+
+/* Final override: kolom Progres Publikasi berbasis persentase agar tidak melebar */
+.progress-publication-table col.col-title { width: 30% !important; }
+.progress-publication-table col.col-release-date { width: 11% !important; }
+.progress-publication-table col.col-upload-date { width: 10% !important; }
+.progress-publication-table col.col-check-start-date { width: 12% !important; }
+.progress-publication-table col.col-start-date { width: 12% !important; }
+.progress-publication-table col.col-status { width: 13% !important; }
+.progress-publication-table col.col-action { width: 12% !important; }
+
+
+/* Fix final Progres Publikasi: cegah judul publikasi melebar/menimpa kolom jadwal */
+.progress-publication-table {
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+.progress-publication-table col.col-title { width: 34% !important; }
+.progress-publication-table col.col-release-date { width: 10% !important; }
+.progress-publication-table col.col-upload-date { width: 10% !important; }
+.progress-publication-table col.col-check-start-date { width: 11.5% !important; }
+.progress-publication-table col.col-start-date { width: 11.5% !important; }
+.progress-publication-table col.col-status { width: 12% !important; }
+.progress-publication-table col.col-action { width: 11% !important; }
+
+.progress-publication-table tbody td.name-cell {
+    text-align: left !important;
+    overflow: hidden !important;
+    max-width: 0 !important;
+    padding-left: 12px !important;
+    padding-right: 10px !important;
+}
+
+.progress-publication-table .progress-title-text {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 3 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+    line-height: 1.28 !important;
+    font-size: 12.7px !important;
+    font-weight: 800 !important;
+}
+
+.progress-publication-table thead th,
+.progress-publication-table tbody td {
+    overflow: hidden !important;
+}
+
+.progress-publication-table .date-stack {
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.progress-publication-table .date-main {
+    font-size: 11.8px !important;
+    line-height: 1.08 !important;
+}
+
+.progress-publication-table .date-year {
+    font-size: 10.2px !important;
+}
+
+.progress-publication-table .status-chip {
+    max-width: 100% !important;
+    white-space: normal !important;
+}
+
+.progress-publication-table .progress-action-group {
+    display: inline-flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+
+.progress-publication-table .progress-action-group .table-action-btn {
+    width: 28px !important;
+    min-width: 28px !important;
+    height: 28px !important;
+}
+
+
+/* Revisi tampilan tabel monitoring dan daftar tugas */
+.monitoring-month-table th:last-child,
+.monitoring-month-table th:nth-last-child(2) {
+    width: 104px;
+}
+
+.monitoring-total-stack strong {
+    font-size: 13px;
+}
+
+.monitoring-date-chips {
+    align-items: center;
+}
+
+.monitoring-date-chips span {
+    white-space: nowrap;
+}
+
+
+/* Revisi tampilan tabel pegawai */
+.employee-task-table th,
+.employee-task-table td {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+
+.employee-task-table .employee-task-schedule-chips {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+    max-width: 100%;
+}
+
+.employee-task-table .date-stack.employee-release-date-stack {
+    align-items: center !important;
+    gap: 1px !important;
+}
+
+.employee-task-table .date-stack .date-main {
+    font-size: 12px !important;
+    line-height: 1.05 !important;
+}
+
+.employee-task-table .date-stack .date-year {
+    font-size: 10px !important;
+    line-height: 1.05 !important;
+}
+
+.employee-task-table .remaining-days-chip {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 3px !important;
+    padding: 2px 6px !important;
+    border-radius: 999px !important;
+    background: rgba(100, 116, 139, 0.10) !important;
+    border: 1px solid rgba(100, 116, 139, 0.22) !important;
+    color: #475569 !important;
+    font-size: 9.5px !important;
+    font-weight: 700 !important;
+    line-height: 1.05 !important;
+    white-space: nowrap !important;
+}
+
+.employee-task-table .employee-task-action-cell .btn {
+    max-width: 96px;
+    white-space: normal;
+    line-height: 1.1;
+    padding: 5px 7px;
+    font-size: 10.5px;
+}
+
+
+/* Revisi menu pegawai: dokumen pemeriksaan, input infografis, dan tabel tugas */
+.review-document-card-grid {
+    display: flex !important;
+    grid-template-columns: none !important;
+    gap: 10px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding-bottom: 6px !important;
+    scroll-snap-type: x proximity;
+}
+
+.review-document-card-grid .review-document-card {
+    flex: 0 0 255px !important;
+    max-width: 255px !important;
+    scroll-snap-align: start;
+}
+
+.review-document-card-grid .review-document-empty {
+    flex: 1 1 auto !important;
+}
+
+.infographic-review-input-line {
+    gap: 0 !important;
+    margin-top: 0 !important;
+}
+
+.infographic-review-input-line .author-file-link-box {
+    width: 100% !important;
+}
+
+.employee-task-table .employee-task-schedule-chips {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 5px !important;
+    max-width: 100% !important;
+}
+
+.employee-task-table .employee-task-schedule-chips span {
+    flex: 0 1 auto !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+}
+
+
+/* Fix tampilan Tim Kerja panjang pada Daftar Tugas Pegawai */
+.employee-task-table .employee-task-team-cell {
+    vertical-align: middle !important;
+    overflow: hidden !important;
+    word-break: normal !important;
+}
+
+.employee-task-table .employee-task-team-preview {
+    display: block !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    font-size: 12px !important;
+    line-height: 1.25 !important;
+}
+
+.employee-task-table .employee-team-more-btn {
+    display: inline-flex !important;
+    margin-top: 4px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: #0d6efd !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+.employee-task-table .employee-team-more-btn:hover {
+    text-decoration: underline !important;
+}
+
+.employee-task-table .employee-task-team-full {
+    margin-top: 5px !important;
+    max-width: 100% !important;
+    color: #1e293b !important;
+    font-size: 11px !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+}
+
+
+/* =========================================================
+   FINAL UI POLISH 2026 - Dashboard lebih modern dan rapi
+   Fokus: tabel, filter, accordion/list, form, dan card utama
+   ========================================================= */
+:root {
+    --bps-surface: rgba(255, 255, 255, 0.96);
+    --bps-surface-2: rgba(248, 251, 255, 0.92);
+    --bps-line-soft: rgba(148, 163, 184, 0.22);
+    --bps-line-mid: rgba(148, 163, 184, 0.34);
+    --bps-ring: rgba(37, 99, 235, 0.20);
+    --bps-blue-soft: rgba(37, 99, 235, 0.10);
+    --bps-blue-soft-2: rgba(56, 189, 248, 0.10);
+    --bps-green-soft: rgba(16, 185, 129, 0.14);
+    --bps-red-soft: rgba(239, 68, 68, 0.12);
+    --bps-yellow-soft: rgba(245, 158, 11, 0.15);
+    --bps-radius-lg: 24px;
+    --bps-radius-md: 18px;
+    --bps-radius-sm: 13px;
+    --bps-shadow-card: 0 18px 45px rgba(15, 23, 42, 0.075);
+    --bps-shadow-hover: 0 22px 58px rgba(15, 23, 42, 0.12);
+}
+
+body {
+    background:
+        radial-gradient(circle at 4% 0%, rgba(56, 189, 248, 0.13), transparent 30%),
+        radial-gradient(circle at 92% 8%, rgba(37, 99, 235, 0.10), transparent 28%),
+        linear-gradient(145deg, #f8fbff 0%, #eef4fb 46%, #f6faff 100%) !important;
+}
+
+.content {
+    padding: 30px 32px 42px !important;
+}
+
+/* Sidebar CSS removed, now managed centrally by sidebar.css */
+
+.topbar h5,
+.content h4,
+.content h5,
+.card-header h5,
+.card-header h6 {
+    letter-spacing: -0.35px;
+}
+
+/* Card utama: bentuk lebih halus, tidak terlalu datar */
+.card,
+.table-card,
+.form-card,
+.stat-card {
+    border-radius: var(--bps-radius-lg) !important;
+    border: 1px solid rgba(203, 213, 225, 0.74) !important;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.94)) padding-box,
+        linear-gradient(135deg, rgba(37,99,235,.16), rgba(56,189,248,.10), rgba(148,163,184,.12)) border-box !important;
+    box-shadow: var(--bps-shadow-card) !important;
+}
+
+.card:hover,
+.table-card:hover,
+.form-card:hover,
+.stat-card:hover {
+    box-shadow: var(--bps-shadow-hover) !important;
+}
+
+.card-header {
+    padding: 20px 20px !important;
+    background:
+        radial-gradient(circle at left top, rgba(37,99,235,.075), transparent 35%),
+        linear-gradient(180deg, #ffffff, #fbfdff) !important;
+    border-bottom: 1px solid rgba(203, 213, 225, 0.62) !important;
+}
+
+.card-body {
+    padding: 20px !important;
+}
+
+/* Kotak keterangan fitur dibuat lebih bersih seperti information panel */
+.alert-info,
+.feature-hint,
+.rounded-4.bg-light.border,
+.bg-light.border.rounded-4 {
+    border-radius: 20px !important;
+    background:
+        radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.12), transparent 32%),
+        linear-gradient(135deg, rgba(238, 248, 255, .98), rgba(239, 246, 255, .94)) !important;
+    border: 1px solid rgba(125, 211, 252, 0.65) !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.85), 0 12px 26px rgba(14, 116, 144, 0.055) !important;
+}
+
+/* Form dan filter dibuat satu keluarga visual */
+.form-label,
+label.form-label {
+    color: #0f172a !important;
+    font-size: 12.2px !important;
+    font-weight: 800 !important;
+    margin-bottom: 7px !important;
+}
+
+.form-control,
+.form-select,
+.input-group-text {
+    min-height: 43px !important;
+    border-radius: 14px !important;
+    border: 1px solid rgba(148, 163, 184, 0.35) !important;
+    background-color: rgba(255,255,255,.96) !important;
+    color: #0f172a !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.85), 0 1px 0 rgba(15,23,42,.02) !important;
+    transition: border-color .18s ease, box-shadow .18s ease, background-color .18s ease, transform .18s ease;
+}
+
+.form-control:hover,
+.form-select:hover {
+    border-color: rgba(37, 99, 235, 0.42) !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: rgba(37, 99, 235, 0.70) !important;
+    box-shadow: 0 0 0 4px var(--bps-ring), inset 0 1px 0 rgba(255,255,255,.95) !important;
+    background-color: #ffffff !important;
+}
+
+.form-text,
+.text-muted {
+    color: #64748b !important;
+}
+
+/* Baris filter pada halaman utama lebih rapi dan fleksibel */
+#publication-filter-form,
+.progress-filter-row,
+.monitoring-filter-row,
+.card-header form.row,
+.card-body form.row {
+    align-items: end !important;
+}
+
+#publication-filter-form .form-control,
+#publication-filter-form .form-select,
+#publication-filter-form .btn,
+.progress-filter-row .form-control,
+.progress-filter-row .form-select,
+.progress-filter-row .btn,
+.monitoring-filter-row .form-control,
+.monitoring-filter-row .form-select,
+.monitoring-filter-row .btn {
+    min-height: 43px !important;
+}
+
+/* Button modern dengan bobot visual yang konsisten */
+.btn {
+    min-height: 40px;
+    border-radius: 14px !important;
+    font-weight: 800 !important;
+    transition: transform .16s ease, box-shadow .16s ease, filter .16s ease, background .16s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #1168f3 0%, #2563eb 52%, #1d8fe8 100%) !important;
+    box-shadow: 0 12px 26px rgba(37, 99, 235, 0.20) !important;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 16px 34px rgba(37, 99, 235, 0.25) !important;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #059669, #10b981) !important;
+    border-color: transparent !important;
+    box-shadow: 0 12px 25px rgba(16, 185, 129, 0.18) !important;
+}
+
+.btn-outline-primary,
+.btn-outline-secondary {
+    background: rgba(255,255,255,.88) !important;
+    border-color: rgba(37, 99, 235, 0.36) !important;
+}
+
+.btn-danger,
+.btn-warning,
+.btn-info,
+.btn-secondary {
+    border-color: transparent !important;
+}
+
+/* Tabel: header premium, garis halus, row tidak terlalu kasar */
+.table-fit-wrapper,
+.table-responsive {
+    border-radius: 22px !important;
+    border: 1px solid rgba(203, 213, 225, 0.78) !important;
+    background: rgba(255,255,255,.98) !important;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.055) !important;
+    overflow: auto !important;
+}
+
+.table-clean {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    background: #ffffff !important;
+}
+
+.table-clean thead th {
+    position: relative;
+    background:
+        linear-gradient(180deg, #edf6ff 0%, #dfecfb 100%) !important;
+    color: #0b1f3a !important;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.38) !important;
+    padding: 15px 12px !important;
+    font-size: 12.2px !important;
+    font-weight: 900 !important;
+    letter-spacing: -0.05px;
+    line-height: 1.18 !important;
+}
+
+.table-clean thead th:first-child {
+    border-top-left-radius: 20px;
+}
+
+.table-clean thead th:last-child {
+    border-top-right-radius: 20px;
+}
+
+.table-clean thead th:not(:last-child),
+.table-clean tbody td:not(:last-child) {
+    border-right: 1px solid rgba(226, 232, 240, 0.85) !important;
+}
+
+.table-clean tbody td {
+    padding: 14px 12px !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.86) !important;
+    background: rgba(255,255,255,.98) !important;
+    color: #1f2a3d !important;
+    line-height: 1.34 !important;
+}
+
+.table-clean tbody tr:nth-child(even) td {
+    background: rgba(248, 251, 255, 0.82) !important;
+}
+
+.table-clean tbody tr:hover td {
+    background: linear-gradient(90deg, rgba(37, 99, 235, 0.075), rgba(239, 246, 255, 0.82)) !important;
+}
+
+.table-clean .name-cell,
+.table-clean td.fw-semibold,
+.table-clean td strong {
+    color: #0b172f !important;
+    font-weight: 850 !important;
+}
+
+.sort-link {
+    gap: 6px !important;
+    font-weight: 900 !important;
+}
+
+.sort-active {
+    background: linear-gradient(180deg, #ddecff 0%, #d5e8ff 100%) !important;
+    box-shadow: inset 0 -3px 0 #2563eb !important;
+}
+
+/* Tabel manajemen publikasi dan progres dibuat lebih proporsional */
+.publication-fit-table,
+.progress-publication-table,
+.employee-task-table,
+.user-account-table,
+.team-work-table,
+.monitoring-table {
+    border-radius: 22px !important;
+}
+
+.publication-fit-table .date-stack,
+.progress-publication-table .date-stack,
+.employee-task-table .date-stack,
+.monitoring-table .date-stack {
+    min-width: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.date-main {
+    font-size: 13px !important;
+    letter-spacing: -0.15px;
+}
+
+.date-year {
+    font-size: 10.8px !important;
+    color: #64748b !important;
+}
+
+.remaining-days-chip,
+.employee-task-table .remaining-days-chip,
+.progress-publication-table .remaining-days-chip {
+    background: rgba(100, 116, 139, 0.09) !important;
+    border: 1px solid rgba(100, 116, 139, 0.18) !important;
+    color: #475569 !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.75) !important;
+}
+
+/* Badge status lebih elegan dan tidak terasa tempelan */
+.status-chip,
+.compact-badge,
+.badge {
+    border-radius: 999px !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.75) !important;
+}
+
+.status-chip {
+    min-width: 88px;
+    padding: .44rem .72rem !important;
+    font-size: 11px !important;
+    line-height: 1.15 !important;
+}
+
+.compact-badge.bg-primary,
+.badge.bg-primary {
+    background: linear-gradient(135deg, #2563eb, #1d8fe8) !important;
+}
+
+/* Tombol aksi tabel lebih seperti ikon dashboard */
+.table-action-btn,
+.account-action-btn,
+.progress-action-group .table-action-btn {
+    width: 33px !important;
+    height: 33px !important;
+    min-width: 33px !important;
+    border-radius: 11px !important;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.10) !important;
+}
+
+.action-buttons,
+.progress-action-group {
+    gap: 7px !important;
+}
+
+/* Accordion/list publikasi siap rilis, knowledge, publikasi selesai dikelola */
+.knowledge-drawer-list {
+    display: grid;
+    gap: 14px;
+}
+
+.knowledge-drawer-list .accordion-item {
+    margin-bottom: 0 !important;
+}
+
+.knowledge-drawer-list .accordion-button,
+.accordion-button.shadow-sm.rounded-4 {
+    min-height: 70px;
+    border-radius: 20px !important;
+    border: 1px solid rgba(203, 213, 225, 0.72) !important;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,.98), rgba(252,254,255,.96)) !important;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.07) !important;
+    transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, background .16s ease;
+}
+
+.knowledge-drawer-list .accordion-button:hover,
+.accordion-button.shadow-sm.rounded-4:hover {
+    transform: translateY(-2px);
+    border-color: rgba(37, 99, 235, 0.30) !important;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.10) !important;
+    background:
+        radial-gradient(circle at left center, rgba(37,99,235,.075), transparent 28%),
+        linear-gradient(180deg, #ffffff, #f8fbff) !important;
+}
+
+.knowledge-drawer-list .accordion-button:not(.collapsed),
+.accordion-button:not(.collapsed) {
+    color: #0b172f !important;
+    background:
+        radial-gradient(circle at left center, rgba(37,99,235,.10), transparent 32%),
+        linear-gradient(180deg, #ffffff, #eef6ff) !important;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.10) !important;
+}
+
+.knowledge-drawer-list .accordion-body,
+.accordion-body.bg-white.border.rounded-4 {
+    border-radius: 20px !important;
+    border-color: rgba(203, 213, 225, 0.74) !important;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* Ikon bundar pada list dibuat halus dan seragam */
+.knowledge-drawer-list .rounded-circle,
+.ready-compact-card .rounded-circle,
+.accordion-button .rounded-circle {
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.82), 0 10px 20px rgba(37, 99, 235, 0.12) !important;
+}
+
+/* Dashboard summary cards */
+.dashboard-summary-card,
+.stat-card,
+.single-bar-chart-wrap,
+.chart-box {
+    border-radius: 22px !important;
+    border: 1px solid rgba(203, 213, 225, 0.72) !important;
+    background:
+        radial-gradient(circle at 0 0, rgba(37, 99, 235, 0.08), transparent 35%),
+        linear-gradient(135deg, rgba(255,255,255,.98), rgba(248,251,255,.94)) !important;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06) !important;
+}
+
+.single-bar-chart-wrap,
+.chart-box {
+    padding: 20px !important;
+}
+
+/* Halaman tambah/edit publikasi: form terasa lebih terarah */
+.form-card .form-control,
+.form-card .form-select,
+.card-body .form-control,
+.card-body .form-select {
+    font-size: 14px !important;
+}
+
+.form-card textarea.form-control,
+.card-body textarea.form-control {
+    min-height: 108px !important;
+    line-height: 1.55 !important;
+}
+
+/* Publication ready release card / materials */
+.ready-material-card {
+    border-radius: 20px !important;
+    background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.075), transparent 34%),
+        linear-gradient(135deg, #ffffff 0%, #f8fbff 100%) !important;
+    border-color: rgba(203, 213, 225, 0.82) !important;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.055) !important;
+}
+
+.ready-material-icon {
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.82), 0 10px 20px rgba(37,99,235,.12);
+}
+
+.ready-release-review-strip {
+    background: linear-gradient(135deg, rgba(248, 251, 255, .95), rgba(239, 246, 255, .88)) !important;
+    border-style: solid !important;
+    border-color: rgba(148, 163, 184, 0.34) !important;
+}
+
+/* Password/input group dan tombol kecil agar tidak terlihat keras */
+.input-group .form-control,
+.input-group .input-group-text,
+.input-group .btn {
+    min-height: 40px !important;
+}
+
+.input-group .btn {
+    box-shadow: none !important;
+}
+
+/* Modal, dropdown, dan area pendukung */
+.modal-content,
+.dropdown-menu {
+    border-radius: 20px !important;
+    border: 1px solid rgba(203, 213, 225, 0.78) !important;
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18) !important;
+}
+
+.dropdown-item {
+    border-radius: 12px !important;
+    font-weight: 700;
+}
+
+/* Responsive polish */
+@media (max-width: 992px) {
+    .content {
+        padding: 22px 18px 32px !important;
+    }
+
+    .card,
+    .table-card,
+    .form-card,
+    .stat-card {
+        border-radius: 20px !important;
+    }
+
+    .table-clean thead th,
+    .table-clean tbody td {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .topbar {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .btn {
+        width: auto;
+    }
+
+    #publication-filter-form .btn,
+    .progress-filter-row .btn,
+    .monitoring-filter-row .btn {
+        width: 100% !important;
+    }
+}
+
+
+/* ==========================================================
+   FINAL UI MICRO-POLISH - Revisi tampilan.docx
+   Fokus: input password, header tabel, bobot nama publikasi,
+   dan konsistensi tombol cari. Tidak mengubah isi data tabel.
+========================================================== */
+
+/* Tambah Akun Pengguna: input password + tombol mata menyatu, acak password terpisah */
+.password-action-row {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+}
+
+.password-action-row .password-eye-group {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.password-eye-group .form-control {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.password-eye-group .password-eye-btn {
+    width: 46px !important;
+    min-width: 46px !important;
+    padding: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 13px !important;
+    border-bottom-right-radius: 13px !important;
+    background: #ffffff !important;
+    border-color: #d6e0ec !important;
+    color: #475569 !important;
+}
+
+.password-eye-group .password-eye-btn:hover {
+    color: #0d6efd !important;
+    background: #f8fbff !important;
+}
+
+.password-random-btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+}
+
+@media (max-width: 576px) {
+    .password-action-row {
+        flex-direction: column;
+    }
+
+    .password-random-btn {
+        width: 100%;
+    }
+}
+
+/* Header tabel dibuat konsisten rata tengah, tanpa mengganggu isi kolom */
+.table-clean thead th,
+.table-clean thead th .sort-link,
+.dashboard-summary-table thead th,
+.dashboard-summary-table thead th .sort-link,
+.team-template-table thead th,
+.assign-table thead th,
+.assign-table thead th .sort-link,
+.team-work-table thead th,
+.team-work-table thead th .sort-link {
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+/* Nama publikasi di tabel tidak dibuat bold berlebihan */
+.publication-fit-table .name-cell,
+.progress-publication-table .name-cell,
+.dashboard-summary-table .name-cell,
+.monitoring-table .name-cell,
+.employee-task-table td:nth-child(2) > div:first-child,
+.publication-title-cell,
+.ready-publication-title,
+.table-clean td.publication-title-cell {
+    font-weight: 500 !important;
+    color: #10223f !important;
+    letter-spacing: 0 !important;
+}
+
+/* Tim Kerja Publikasi: isi Nama Tim dan Judul Publikasi rata kiri, header tetap center */
+.team-work-table {
+    table-layout: fixed !important;
+}
+
+.team-work-table th:nth-child(2),
+.team-work-table td:nth-child(2) {
+    width: 26% !important;
+}
+
+.team-work-table th:nth-child(3),
+.team-work-table td:nth-child(3) {
+    width: auto !important;
+}
+
+.team-work-table td.team-name-cell,
+.team-work-table td.publication-title-cell {
+    text-align: left !important;
+    vertical-align: middle !important;
+    line-height: 1.35 !important;
+    overflow-wrap: anywhere !important;
+}
+
+.team-work-table td.team-name-cell {
+    font-weight: 600 !important;
+    color: #0f172a !important;
+}
+
+.team-work-table td.publication-title-cell {
+    font-weight: 500 !important;
+}
+
+/* Atur Tim Kerja / Buat Template: header center, tombol delete konsisten */
+.team-template-table thead th,
+.assign-table thead th {
+    vertical-align: middle !important;
+}
+
+.team-template-table .template-action-buttons {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    width: 100%;
+}
+
+.team-template-table .template-action-buttons form {
+    display: inline-flex !important;
+    margin: 0 !important;
+}
+
+.team-template-table .template-action-buttons .table-action-btn,
+.team-work-table .table-action-btn {
+    width: 34px !important;
+    min-width: 34px !important;
+    height: 34px !important;
+    padding: 0 !important;
+    border-radius: 10px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Tombol cari pegawai Daftar Tugas Saya disamakan dengan tombol utama halaman lain */
+.employee-task-search-btn {
+    border-color: transparent !important;
+    background: linear-gradient(135deg, #0d6efd, #2563eb) !important;
+    color: #ffffff !important;
+    box-shadow: 0 10px 22px rgba(37, 99, 235, 0.16) !important;
+}
+
+.employee-task-search-btn:hover {
+    color: #ffffff !important;
+    filter: brightness(.97);
+    transform: translateY(-1px);
+}
+
+/* Dashboard global: header nama publikasi dan seluruh header tetap center */
+.dashboard-summary-table thead th,
+.dashboard-summary-table thead th a {
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+/* ==========================================================
+   FINAL UI MICRO-POLISH v2 - Revisi tampilan_v2.docx
+   Fokus: badge kategori, kolom aksi Tim Kerja Publikasi,
+   judul publikasi Progres, dan tombol aksi persegi.
+========================================================== */
+
+/* Manajemen Publikasi: badge kategori ARC/Non-ARC benar-benar berada di tengah kolom */
+.publication-management-table td:nth-child(2),
+.publication-management-table th:nth-child(2) {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.publication-management-table td:nth-child(2) {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+
+.publication-management-table td:nth-child(2) .compact-badge,
+.publication-management-table td:nth-child(2) .badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 76px !important;
+    min-width: 76px !important;
+    max-width: 76px !important;
+    min-height: 27px !important;
+    margin: 0 auto !important;
+    padding: 0 .48rem !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+}
+
+/* Semua tombol ikon tabel dijaga persegi, tidak mengikuti min-height tombol umum */
+.table-action-btn,
+.btn.table-action-btn,
+button.table-action-btn,
+a.table-action-btn {
+    width: 32px !important;
+    min-width: 32px !important;
+    max-width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    max-height: 32px !important;
+    padding: 0 !important;
+    border-radius: 9px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+    flex: 0 0 32px !important;
+}
+
+.table-action-btn i {
+    margin: 0 !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+}
+
+/* Tim Kerja Publikasi: kolom aksi kembali lega, tombol tidak keluar tabel */
+.team-work-table {
+    min-width: 880px !important;
+    table-layout: fixed !important;
+}
+
+.team-work-table th.col-action,
+.team-work-table td:last-child {
+    width: 160px !important;
+    min-width: 160px !important;
+    max-width: 160px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    text-align: center !important;
+    overflow: visible !important;
+}
+
+.team-work-table th:nth-child(2),
+.team-work-table td:nth-child(2) {
+    width: 23% !important;
+}
+
+.team-work-table th:nth-child(3),
+.team-work-table td:nth-child(3) {
+    width: auto !important;
+}
+
+.team-work-table td:last-child > .d-flex {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+.team-work-table td:last-child form {
+    display: inline-flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    flex: 0 0 auto !important;
+}
+
+.team-work-table td:last-child .btn-success {
+    min-height: 32px !important;
+    height: 32px !important;
+    padding: 0 11px !important;
+    border-radius: 9px !important;
+    white-space: nowrap !important;
+    flex: 0 0 auto !important;
+}
+
+.team-work-table td:last-child .btn-danger.table-action-btn {
+    width: 32px !important;
+    min-width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+}
+
+/* Buat Template Tim: delete juga persegi dan sejajar dengan Assign Tim */
+.team-template-table .template-action-buttons {
+    max-width: 100% !important;
+    overflow: visible !important;
+}
+
+.team-template-table .template-action-buttons .btn-success {
+    min-height: 32px !important;
+    height: 32px !important;
+    padding: 0 11px !important;
+    border-radius: 9px !important;
+    white-space: nowrap !important;
+}
+
+.team-template-table .template-action-buttons .btn-danger.table-action-btn {
+    width: 32px !important;
+    min-width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+}
+
+/* Progres Publikasi: judul publikasi tidak bold, tombol aksi persegi dan lebih pendek */
+.progress-publication-table .name-cell,
+.progress-publication-table .progress-title-text,
+.progress-publication-table td:first-child,
+.progress-publication-table td:first-child .progress-title-text {
+    font-weight: 400 !important;
+    color: #10223f !important;
+    letter-spacing: 0 !important;
+}
+
+.progress-publication-table col.col-action {
+    width: 108px !important;
+}
+
+.progress-publication-table .progress-action-group {
+    gap: 5px !important;
+    flex-wrap: nowrap !important;
+}
+
+.progress-publication-table .progress-action-group .table-action-btn,
+.progress-publication-table .progress-action-group a.table-action-btn {
+    width: 30px !important;
+    min-width: 30px !important;
+    max-width: 30px !important;
+    height: 30px !important;
+    min-height: 30px !important;
+    max-height: 30px !important;
+    flex: 0 0 30px !important;
+    border-radius: 9px !important;
+}
+
+.progress-publication-table .progress-action-group .table-action-btn i {
+    font-size: 12.5px !important;
+}
+
+
+/* ==========================================================
+   REVISI TAMPILAN V4 - CAREFUL OVERRIDES
+   Dibuat dari baseline ui-detail-v2-final. Fokus hanya pada
+   catatan Revisi tampilan_V4 agar bagian lain tidak ikut berubah.
+========================================================== */
+
+/* Sidebar CSS removed, now managed centrally by sidebar.css */
+
+/* Dashboard global: semua header tabel, terutama Nama Publikasi, rata tengah saja */
+.dashboard-summary-table thead th,
+.dashboard-summary-table thead th .sort-link,
+.dashboard-summary-table thead th a.sort-link {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Manajemen Publikasi: kategori dibuat sama seperti dashboard, hanya dipusatkan di sel */
+.publication-management-table td:nth-child(2),
+.publication-management-table th:nth-child(2) {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.publication-management-table td:nth-child(2) .compact-badge,
+.publication-management-table td:nth-child(2) .badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: .36rem .62rem !important;
+    font-size: 11px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+}
+
+/* Atur Tim Kerja: catatan kecil di bawah nama tim tidak ikut tebal dari .name-cell */
+.team-template-table td.name-cell small,
+.team-template-table .name-cell small.text-muted,
+.team-template-table td.name-cell .text-muted {
+    font-weight: 400 !important;
+    line-height: 1.35 !important;
+}
+
+/* Progres Publikasi: judul mengikuti gaya nama publikasi di tabel lain */
+.progress-publication-table .name-cell,
+.progress-publication-table .progress-title-text,
+.progress-publication-table td:first-child,
+.progress-publication-table td:first-child .progress-title-text {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #10223f !important;
+    letter-spacing: 0 !important;
+    line-height: 1.34 !important;
+}
+
+.progress-publication-table .progress-title-text {
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: anywhere !important;
+}
+
+/* Progres Publikasi: beri ruang aman untuk 3 tombol aksi, ambil sedikit dari kolom tanggal */
+.progress-publication-table col.col-title { width: 32% !important; }
+.progress-publication-table col.col-release-date { width: 10% !important; }
+.progress-publication-table col.col-upload-date { width: 9.5% !important; }
+.progress-publication-table col.col-check-start-date { width: 10% !important; }
+.progress-publication-table col.col-start-date { width: 10% !important; }
+.progress-publication-table col.col-status { width: 12% !important; }
+.progress-publication-table col.col-action { width: 16.5% !important; }
+
+.progress-publication-table thead th.col-action,
+.progress-publication-table tbody td:last-child {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    text-align: center !important;
+    overflow: visible !important;
+}
+
+.progress-publication-table .progress-action-group {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 7px !important;
+    width: auto !important;
+    min-width: 108px !important;
+}
+
+.progress-publication-table .progress-action-group .table-action-btn,
+.progress-publication-table .progress-action-group a.table-action-btn {
+    width: 31px !important;
+    min-width: 31px !important;
+    max-width: 31px !important;
+    height: 31px !important;
+    min-height: 31px !important;
+    max-height: 31px !important;
+    flex: 0 0 31px !important;
+}
+
+/* Knowledge: badge Aktif/Nonaktif benar-benar berada di tengah secara vertikal */
+.knowledge-badges {
+    align-items: center !important;
+}
+
+.knowledge-badges .badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 26px !important;
+    padding: 0 .68rem !important;
+    line-height: 1 !important;
+    vertical-align: middle !important;
+}
+
+/* Pegawai - Rekap Hasil Kerja: dibuat lebih modern tanpa mengubah isi */
+.employee-work-report-page .card-header {
+    background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.09), transparent 34%),
+        linear-gradient(135deg, #ffffff 0%, #f8fbff 100%) !important;
+}
+
+.employee-work-hero {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(147, 197, 253, .46) !important;
+    border-radius: 22px !important;
+    padding: 20px !important;
+    background:
+        radial-gradient(circle at 95% 12%, rgba(56, 189, 248, .18), transparent 30%),
+        linear-gradient(135deg, #eef6ff 0%, #ffffff 58%, #f8fbff 100%) !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.88), 0 12px 30px rgba(15, 23, 42, .055) !important;
+}
+
+.employee-work-hero::after {
+    content: "";
+    position: absolute;
+    right: -52px;
+    top: -72px;
+    width: 170px;
+    height: 170px;
+    border-radius: 999px;
+    background: rgba(37, 99, 235, .08);
+}
+
+.employee-work-hero .summary-pill {
+    position: relative;
+    z-index: 1;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 999px !important;
+    padding: 7px 13px !important;
+    background: rgba(13, 110, 253, .12) !important;
+    color: #0d47a1 !important;
+    border: 1px solid rgba(13, 110, 253, .18) !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+    letter-spacing: .03em !important;
+    text-transform: uppercase !important;
+}
+
+.employee-work-hero .row,
+.employee-work-hero .col-md-4 {
+    position: relative;
+    z-index: 1;
+}
+
+.employee-work-hero .fw-bold {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+}
+
+.employee-work-metric-card {
+    border-color: rgba(203, 213, 225, .78) !important;
+    border-radius: 18px !important;
+    background:
+        radial-gradient(circle at top right, rgba(37, 99, 235, .07), transparent 34%),
+        linear-gradient(135deg, #ffffff, #f8fbff) !important;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, .045) !important;
+}
+
+.employee-work-metric-card .small.text-muted {
+    font-weight: 700 !important;
+    letter-spacing: .01em !important;
+}
+
+.employee-work-metric-card .fw-bold {
+    margin-top: 4px !important;
+    color: #10223f !important;
+    font-weight: 800 !important;
+    line-height: 1.35 !important;
+}
+
+.employee-work-activity-card {
+    border: 1px solid rgba(203, 213, 225, .76) !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+}
+
+.employee-work-activity-card .card-header {
+    background: linear-gradient(135deg, #ffffff, #f8fbff) !important;
+    border-bottom: 1px solid rgba(203, 213, 225, .74) !important;
+}
+
+.employee-work-activity-item {
+    border-color: rgba(203, 213, 225, .76) !important;
+    border-radius: 16px !important;
+    background: #ffffff !important;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, .035) !important;
+}
+
+.employee-work-activity-item .fw-bold {
+    color: #0f172a !important;
+    font-weight: 800 !important;
+}
+
+/* Pegawai - Daftar Tugas: garis tepi tabel lebih jelas dan kolom aksi rata tengah */
+.employee-task-table {
+    border: 1px solid #cbd8ea !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+}
+
+.employee-task-table thead th,
+.employee-task-table tbody td {
+    border-color: #d6e1ef !important;
+}
+
+.employee-task-table thead th:not(:last-child),
+.employee-task-table tbody td:not(:last-child) {
+    border-right-color: #d6e1ef !important;
+}
+
+.employee-task-table tbody td {
+    border-bottom-color: #e0e8f3 !important;
+}
+
+.employee-task-table th:last-child,
+.employee-task-table td.employee-task-action-cell {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.employee-task-table td.employee-task-action-cell {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.employee-task-table .employee-task-action-cell .btn,
+.employee-task-table .employee-task-action-cell button,
+.employee-task-table .employee-task-action-cell a {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.employee-task-table .employee-task-action-cell .text-danger {
+    text-align: center !important;
+    max-width: 96px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* =========================================================
+   Final small reset: tabel pegawai mengikuti tabel admin
+   ========================================================= */
+.employee-task-table-wrapper {
+    margin-top: 0 !important;
+}
+
+.employee-task-table {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+}
+
+.employee-task-table thead th {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.employee-task-table thead th .sort-link,
+.employee-task-table thead th:nth-child(2) .sort-link {
+    display: inline-flex !important;
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+.employee-task-table thead th:nth-child(2),
+.employee-task-table thead th:nth-child(2) span {
+    text-align: center !important;
+}
+
+.employee-task-table th,
+.employee-task-table td {
+    border-color: rgba(226, 232, 240, 0.85) !important;
+}
+
+.employee-task-table tbody td {
+    vertical-align: middle !important;
+}
+
+.employee-task-table td.employee-task-action-cell {
+    text-align: center !important;
+}
+
+.employee-task-table .employee-task-action-cell .btn,
+.employee-task-table .employee-task-action-cell button,
+.employee-task-table .employee-task-action-cell a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* =========================================================
+   Patch dashboard table header alignment (fix 2026-06-21)
+   - Dashboard ringkasan tidak memiliki kolom No, jadi aturan first-child lama
+     tidak boleh mempersempit kolom Nama Publikasi.
+   - Header Nama Publikasi dan seluruh header dashboard dibuat rata tengah.
+   ========================================================= */
+.dashboard-summary-table thead th {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.dashboard-summary-table thead th .sort-link,
+.dashboard-summary-table thead th:first-child .sort-link {
+    display: flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.dashboard-summary-table thead th .sort-link span,
+.dashboard-summary-table thead th:first-child .sort-link span {
+    display: inline-block !important;
+    width: auto !important;
+    text-align: center !important;
+}
+
+.dashboard-summary-table th:first-child,
+.dashboard-summary-table td:first-child {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.dashboard-summary-table col.col-title {
+    width: 28% !important;
+}
+
+.dashboard-summary-table tbody td.name-cell,
+.dashboard-summary-table tbody td:first-child {
+    text-align: left !important;
+}
+
+
+/* =========================================================
+   Dashboard harmonization + alur proses card
+   - Menyamakan header dashboard admin, pegawai, pimpinan
+   - Menambahkan card infografis alur proses di antara grafik dan tabel
+   ========================================================= */
+.dashboard-summary-table thead th,
+.dashboard-summary-table thead th a.sort-link,
+.dashboard-summary-table thead th .sort-link {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.dashboard-summary-table thead th .sort-link,
+.dashboard-summary-table thead th:first-child .sort-link {
+    min-height: 46px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    gap: 6px !important;
+}
+
+.dashboard-summary-table thead th .sort-link span,
+.dashboard-summary-table thead th:first-child .sort-link span {
+    display: inline-block !important;
+    width: auto !important;
+    text-align: center !important;
+    line-height: 1.18 !important;
+}
+
+.dashboard-summary-table col.col-title { width: 28% !important; }
+.dashboard-summary-table col.col-category { width: 9% !important; }
+.dashboard-summary-table col.col-date { width: 12% !important; }
+.dashboard-summary-table col.col-check-date,
+.dashboard-summary-table col.col-start-date { width: 12% !important; }
+.dashboard-summary-table col.col-status { width: 15% !important; }
+
+.dashboard-process-card {
+    border: 1px solid rgba(191, 219, 254, 0.85) !important;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.05) !important;
+}
+
+.dashboard-process-card .card-header {
+    border-bottom: 1px solid rgba(226, 232, 240, 0.82) !important;
+}
+
+.dashboard-process-card .card-header h5 {
+    color: #0f172a !important;
+}
+
+.dashboard-process-figure-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    padding: 6px;
+}
+
+.dashboard-process-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 14px;
+    display: block;
+}

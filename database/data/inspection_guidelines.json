@@ -1,0 +1,1874 @@
+[
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Garuda\n 1. Lambang Garuda hanya digunakan untuk publikasi BPS pusat yang ditandatangani oleh Kepala BPS/Plt. Kepala BPS.\n 2. Ditempatkan di pojok kiri atas.\n 3. Posisinya lebih tinggi daripada lambang/logo lain yang ada di bagian atas.\n 4. Publikasi BPS daerah tidak perlu mencantumkan Lambang Garuda ataupun lambang daerah.",
+    "sort_order": 1,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Nomor Katalog\n 1. Posisi:\n- Terletak di sebelah kanan atas, tidak terlalu mepet dengan batas atas dan samping buku\n- JIka ada ISSN, diletakkan diatas ISSN\n- JIka ada lambang garuda dan tidak memiliki ISSN,  diletakkan sejajar dengan bagian bawah lambang garuda.\n 2. Format Penulisan:\n- \"Katalog:\" (bahasa Indonesia) atau \"Katalog/Catalogue:\" (bahasa Indonesia dan Inggris).\n- Tidak ada spasi sebelum titik dua (:), sesudah titik dua ada spasi.\n- Sebelum dan sesudah tanda “/” tidak ada spasi.",
+    "sort_order": 2,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "ISSN (jika ada)\n 1. Posisi:\n- Diletakan di bawah nomor katalog\n- JIka ada lambang garuda,  diletakkan sejajar dengan bagian bawah lambang garuda.\n 2. Format Penulisan:\n- Tanpa tanda titik dua (:) setelah kata ISSN\ncontoh: ISSN XXXX-XXXX",
+    "sort_order": 3,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Judul Buku, termasuk anak judul jika ada\n 1. Haruslah padat, ringkas, dan jelas.\n 2. Menggunakan huruf kapital semua (UPPERCASE) atau\n menggunakan huruf kapital di setiap awal kata (Capitalize Each Word),\n termasuk unsur kata ulang sempurna kecuali kata sambung.\n 3. Tidak boleh menggunakan jenis huruf dekoratif.\n 4. Harus dwibahasa jika keseluruhan isi buku dwibahasa.\n 5. Penulisannya harus konsisten di semua bagian publikasi yang menyebutkan judul buku.\n 6. Pencantuman nama wilayah didahului kata “Provinsi/Kabupaten/Kota/Kecamatan” jika bukan publikasi nasional\n 7. Nama wilayah tidak boleh diterjemahkan ke dalam bahasa asing.\n 8. Nama wilayah pada umumnya diletakan setelah judul dan sebelum\n referensi waktu (jika ada).\n 9. Hindari menampilkan singkatan tanpa kepanjangannya.",
+    "sort_order": 4,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Tahun Judul\n 1. Tahun yang ditampilkan adalah tahun data yang dapat berupa rentang waktu atau satu tahun tertentu.\n 2. Berupa rentang waktu jika seluruh data disajikan dalam rentang waktu yang sama.\n 4. Penulisan rentang tahun (lebih dari dua tahun) menggunakan En Dash (–) tanpa spasi sebelum maupun sesudahnya.\n 5. Jika rentang dua tahun, gunakan “dan” sebagai penghubung .\n 6. Tahun tunggal menggunakan tahun data terbaru.\n 7. Tidak perlu mencantumkan kata “Tahun”.\n 8. Perubahan tahun judul dari tahun terbit menjadi tahun data menggunakan tanda garis miring.",
+    "sort_order": 5,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Edisi Terbitan Publikasi (Jika publikasi rutin atau memiliki ISSN)\n 1. Diletakan di bawah judul buku dan tahun judul dengan ukuran huruf yang lebih kecil dibanding judul buku.\n 2. Format penulisan:\n- Publikasi bahasa Indonesia: Volume xx, Nomor xx (jika ada), {tahun terbit}\n- Publikasi dwibahasa1: Volume xx, Nomor/Number xx (jika ada), {tahun terbit}\nNomor ditampilkan jika buku diterbitkan lebih dari satu kali dalam satu tahun.",
+    "sort_order": 6,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Komponen Ilustrasi\nIlustrasi tidak boleh mengandung unsur SARA, pornografi, dan hal-hal lain yang mengganggu ketertiban umum.",
+    "sort_order": 7,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Logo Kegiatan\nLogo kegiatan dapat ditampilkan pada bagian tengah kover depan jika berkaitan dengan isi buku.",
+    "sort_order": 8,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Logo HUT Kemerdekaan RI\n1. Dicantumkan pada publikasi yang rilis di Agustus.\n2. Bentuk dan posisi logo mengacu pada ketentuan dari Sekretariat Negara atau lembaga yang berwenang.",
+    "sort_order": 9,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Logo BPS\n1. Diletakkan di bagian bawah  kover.\n2. Sesuai dengan Perka BPS terkait Logo BPS (tanpa efek apapun).\n3. Untuk publikasi kerjasama, logo BPS diletakkan paling kiri dibandingkan logo instansi lain",
+    "sort_order": 10,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Nama BPS penerbit\n1. Diletakkan di samping kanan logo BPS, rata kiri, menggunakan huruf Arial Bold Italic, format  UPPERCASE, dan hanya  menggunakan warna biru (C=100, M=0, Y=0, K=0), putih, atau hitam.\n2. Untuk publikasi dwibahasa, nama BPS penerbit dalam bahasa asing hanya menggunakan bahasa Inggris.\n3. Nama BPS penerbit dalam bahasa Inggris dibuat dalam satu baris dan diletakkan di bawah baris bahasa Indonesia. Istilah bahasa Inggris yang digunakan adalah sbb:\n- publikasi pusat: BPS-STATISTICS INDONESIA\n- publikasi daerah: BPS-STATISTICS XX PROVINCE/REGENCY/MUNICIPALITY\n4. Untuk publikasi BPS provinsi/kabupaten/kota, nama BPS penerbit dalam bahasa Indonesia dibuat dua baris, yaitu baris pertama tulisan “BADAN PUSAT STATISTIK” dan baris kedua nama wilayah.\n5. Contoh penulisan nama BPS penerbit pada publikasi pusat:\n- Publikasi Bahasa Indonesia: BADAN PUSAT STATISTIK\n- Publikasi dwibahasa:\nBADAN PUSAT STATISTIK\nBPS-STATISTICS INDONESIA\n6. Contoh penulisan nama BPS penerbit pada publikasi daerah:\n- Publikasi Bahasa Indonesia:\nBADAN PUSAT STATISTIK\nPROVINSI/KABUPATEN/KOTA XX\n- Publikasi dwibahasa:\nBADAN PUSAT STATISTIK\nPROVINSI/KABUPATEN/KOTA XX\nBPS-STATISTICS XX PROVINCE/REGENCY/MUNICIPALITY\n7. Pada publikasi kerjasama dari lebih 3 instansi, termasuk BPS, nama BPS penerbit boleh tidak ditampilkan.",
+    "sort_order": 11,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Barcode ISSN/ISBN (jika publikasi katalog dan direktori serta memiliki ISSN/ISBN)\n1. Diletakkan pada pojok kiri bawah\n2. Pada bagian atas barcode tambahkan nomor ISSN/ISBN dengan format penulisan \"ISSN XXXX-XXXX\" atau \"ISBN XXX-XXX-XXX-XXX-X\"\n3. Dibuat dengan menggunakan tulisan hitam dan latar putih",
+    "sort_order": 12,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Kover Depan",
+    "requirement_detail": "Tambahkan satu halaman kosong setelah kover depan dengan ketentuan:\n1. Tanpa running title dan nomor halaman.\n2. Tidak dihitung sebagai halaman.\n3. Dapat ditambahkan ilustrasi atau ornamen.",
+    "sort_order": 13,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Judul",
+    "requirement_detail": "Posisi:\nDiletakkan di halaman ganjil dan setelah kover depan",
+    "sort_order": 14,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Judul",
+    "requirement_detail": "Peletakan komponen dan penggunaan jenis serta ukuran huruf pada halaman judul utama sama seperti pada kover depan",
+    "sort_order": 15,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Judul",
+    "requirement_detail": "Tidak menampilkan ilustrasi, lambang garuda, dan logo kegiatan",
+    "sort_order": 16,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Judul",
+    "requirement_detail": "Warna dasar halaman adalah putih.",
+    "sort_order": 17,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Judul",
+    "requirement_detail": "Logo dan nama BPS penerbit wajib berwarna",
+    "sort_order": 18,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Judul",
+    "requirement_detail": "Tidak mencantumkan nomor halaman dan running title, tetapi dihitung sebagai halaman romawi i",
+    "sort_order": 19,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Posisi:\n 1. Diletakkan pada halaman genap dan setelah halaman judul utama\n 2. Jika publikasi dwibahasa, komponen dalam halaman katalog pun harus dwibahasa\n 3. Tidak mencantumkan nomor halaman dan running title, tetapi dihitung sebagai halaman romawi ii",
+    "sort_order": 20,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Judul publikasi dan Tahun judul\nJudul publikasi dan tahun judul harus sama dengan kover depan dan di bagian lain publikasi",
+    "sort_order": 21,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Edisi terbitan publikasi (jika publikasi rutin atau memiliki ISSN)\nformat penulisan dan isian harus sama seperti pada kover depan",
+    "sort_order": 22,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Penomoran Publikasi:\n1. Diletakkan di bawah judul publikasi atau edisi terbitan publikasi, jika ada.\n2. Urutan penulisan penomoran publikasi adalah Katalog, ISSN/ISBN, dan Nomor Publikasi.\n3. Istilah yang digunakan:\n- Publikasi bahasa Indonesia: \"Katalog\", \"ISSN/ISBN\", \"Nomor Publikasi\"\n- Publikasi dwibahasa1: \"Katalog/Catalogue\", \"ISSN/ISBN\", \"Nomor Publikasi/Publication Number\"\n4.  Jika tidak memiliki ISSN/ISBN maka baris tulisan “ISSN/ISBN” dihapus.\n5.  Penulisan “Nomor Publikasi” tidak boleh disingkat.",
+    "sort_order": 23,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Ukuran Buku:\n1. Diletakkan setelah komponen \"Nomor Publikasi\"\n2. Istilah yang digunakan untuk publikasi dwibahasa1 \"Ukuran Buku/Book Size\"\n3. Dicantumkan dalam ukuran cm dengan format lebar x tinggi.\n Contoh: 14,8 cm x 21 cm.",
+    "sort_order": 24,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Jumlah Halaman:\n1. Diletakkan setelah komponen \"Nomor Publikasi\"\n2. Istilah yang digunakan untuk publikasi dwibahasa1 \"Jumlah Halaman/Number of Pages\"\n3. Jumlah halaman yang dicantumkan adalah halaman romawi dan halaman arab.\n4. Jumlah halaman romawi harus genap, tambahkan halaman kosong jika berakhir di halaman ganjil\n5. Jumlah halaman arab adalah nomor halaman terakhir buku, yaitu halaman terakhir yang ada isinya.\n6. Format penulisan tanpa ada spasi sebelum dan sesudah tanda “+”.\nContoh: xii+90 halaman atau Contoh: xii+90 halaman/pages",
+    "sort_order": 25,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Penyusun Naskah\n1. Diletakkan setelah komponen \"Jumlah Halaman\"\n2. Istilah yang digunakan untuk publikasi dwibahasa1 \"Penyusun Naskah/Manuscript Drafter\"\n3. Isian untuk publikasi BPS pusat:\n- Jika hanya dari 1 unit kerja eselon 2 maka isikan nama unit kerja eselon 2\n- Jika naskah hasil kompilasi beberapa unit kerja eselon 2 dalam eselon 1 yang sama maka isikan nama unit kerja eselon 1.\n- Jika naskah hasil kompilasi beberapa unit kerja eselon 2 yang berasal lebih dari satu unit kerja eselon 1 maka isikan Badan Pusat Statistik.\n4. Publikasi BPS daerah: nama BPS provinsi/kabupaten/kota\nNama BPS dalam bahasa Inggris: BPS-Statistics XX Province/Regency/Municipality\n5. Tidak diperkenankan mencantumkan nama-nama individu.",
+    "sort_order": 26,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Penyunting:\n1. Diletakkan setelah komponen \"Penyusun Naskah\"\n2. Istilah yang digunakan untuk publikasi dwibahasa1 \"Penyunting/Editor\"\n3. Ketentuan isian sama seperti komponen penyusun naskah:",
+    "sort_order": 27,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Pembuat Kover:\n1. Diletakkan setelah komponen \"Penyunting\"\n2. Istilah yang digunakan untuk publikasi dwibahasa1 \"Pembuat Kover/Cover Designer\"\n3. Isian:\n- Publikasi BPS pusat: Unit kerja eselon 2\n- Publikasi BPS daerah: unit kerja eselon 2 BPS pusat/nama BPS provinsi/kabupaten/kota\nNama BPS daerah dalam bahasa Inggris: BPS-Statistics XX Province/Regency/Municipality\n- Tidak diperkenankan mencantumkan nama-nama individu.",
+    "sort_order": 28,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Penerbit:\n1. Diletakkan setelah komponen \"Pembuat Kover\"\n2. Istilah yang digunakan untuk publikasi dwibahasa1 \"Penerbit/Publisher\"\n3. Isian adalah nama BPS penerbit\n4. Cantumkan simbol hak cipta (©) sebelum nama BPS penebit. Setelah simbol hak cipta tidak perlu ada spasi.",
+    "sort_order": 29,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Dicetak oleh:\n1. Diletakkan setelah komponen \"Penerbit\"\n2. Istilah yang digunakan untuk publikasi dwibahasa1 \"Dicetak oleh/Printed by\"\n3. Isian:\n- Publikasi BPS pusat: \"Badan Pusat Statistik\" (cetak dalam) atau Nama perusahaan pencetak (cetak luar)\n- Publikasi BPS daerah: Badan Pusat Statistik Provinsi/Kabupaten/Kota xxxxxxxx (cetak dalam), Nama perusahaan pencetak (cetak luar)\n 4. Jika cetak ulang tuliskan:\n Badan Pusat Statistik, Cetakan ke-3 (November 2020)\n CV Xxxxxxx, Cetakan ke-4 (Agustus 2021)\n 5. Jika publikasi buku tidak dicetak maka pada baris “Dicetak oleh” dihapus saja.",
+    "sort_order": 30,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Sumber Ilustrasi:\n1. Diletakkan setelah komponen \"Penerbit\" atau \"Dicetak Oleh\", jika ada\n2. Istilah yang digunakan untuk publikasi dwibahasa1 \"Sumber Ilustrasi/Illustration Source\"\n3: Isian:\n- Cantumkan alamat situs web dari sumber ilustrasi yang digunakan.\n- Jika ilustrasi dibuat oleh BPS, tuliskan nama unit kerja seperti aturan pada Pembuat Kover.",
+    "sort_order": 31,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Depan",
+    "inspection_item": "Halaman Katalog",
+    "requirement_detail": "Pernyataan Hak Cipta (Kutipan):\n1. Diletakkan setelah komponen \"Sumber Ilustrasi\"\n2. - Bahasa Indonesia \"Dilarang mereproduksi dan/atau menggandakan sebagian atau seluruh isi buku ini untuk tujuan komersial tanpa izin tertulis dari [nama BPS penerbit]”.\n - Bahasa Inggris “It is prohibited to reproduce and/or duplicate part or all of this book for commercial purpose without permission from [nama BPS penerbit dalam bahasa Inggris]”.",
+    "sort_order": 32,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Tim Penyusun",
+    "requirement_detail": "Posisi:\n1. Halaman pertama dimulai pada pada halaman ganjil\n2. Terletak setelah halaman katalog",
+    "sort_order": 33,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Tim Penyusun",
+    "requirement_detail": "Tulisan \"Tim Penyusun\" atau istilah lain dengan maksud sama (publikasi bahasa Indonesia) atau \"Tim Penyusun/Compilers\" (publikasi dwibahasa1)",
+    "sort_order": 34,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Tim Penyusun",
+    "requirement_detail": "Judul publikasi dan tahun judulnya.\nIsian harus sama dengan yang dituliskan pada kover depan.",
+    "sort_order": 35,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Tim Penyusun",
+    "requirement_detail": "Edisi terbitan publikasi (jika publikasi rutin atau memiliki ISSN)\nformat penulisan dan isian harus sama seperti pada kover depan.",
+    "sort_order": 36,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Tim Penyusun",
+    "requirement_detail": "ISSN (jika ada):\n1. Diletakkan di pojok kanan atas\n2. Ditulis tanpa titik dua. Contoh: ISSN XXXX-XXXX",
+    "sort_order": 37,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Tim Penyusun",
+    "requirement_detail": "Pencantuman gelar atau tanpa gelar harus konsisten dengan penanda tangan publikasi dan lainnya.",
+    "sort_order": 38,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Tim Penyusun",
+    "requirement_detail": "Komponen yang wajib ada dan cara penulisannnya:\n1. Pengarah/Director (nama kepala satker untuk BPS provinsi/kabupaten/kota dan minimal eselon 2 untuk BPS pusat)\n2. Penanggung Jawab/Person In Charge\n3. Penyunting/Editor\n4. Penulis Naskah/Writer\n5. Pengolah Data/Data Processor (untuk publikasi yang melalui proses pengolahan data)\n6. Penata letak/Layouter\n7. Penerjemah/Translator (untuk publikasi dwibahasa)",
+    "sort_order": 39,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Tim Penyusun",
+    "requirement_detail": "Tidak mencantumkan nomor halaman dan running title, tetapi dihitung sebagai halaman romawi iii",
+    "sort_order": 40,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Tim Penyusun",
+    "requirement_detail": "Jika berakhir di halaman ganjil, tambahkan halaman kosong tanpa nomor halaman dan running title. Halaman ini tetap dihitung sebagai halaman.",
+    "sort_order": 41,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Sambutan",
+    "requirement_detail": "Kriteria:\nPublikasi merupakan hasil kerja sama dengan instansi di luar BPS",
+    "sort_order": 42,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Sambutan",
+    "requirement_detail": "Posisi:\n1. Halaman pertama dimulai pada pada halaman ganjil\n2. Jika publikasi dwibahasa, halaman kata sambutan dalam bahasa asing diletakkan berurutan setelah halaman kata sambutan dalam bahasa Indonesia (bisa di halaman genap)\n3. Terletak setelah halaman tim penyusun",
+    "sort_order": 43,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Sambutan",
+    "requirement_detail": "Tulisan “Kata Sambutan” (untuk bahasa Indonesia) atau istilah lain dengan maksud yang sama",
+    "sort_order": 44,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Sambutan",
+    "requirement_detail": "Isi sambutan, berisi ungkapan apresiasi atas buku yang diterbitkan",
+    "sort_order": 45,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Sambutan",
+    "requirement_detail": "Tempat, bulan, dan tahun kata sambutan ditandatangani:\n1. Tempat: berisi nama ibukota negara/provinsi/kabupaten/kota tempat\nhalaman kata sambutan ditandatangani.\n2. Bulan: paling lama satu bulan sebelum publikasi dirilis (B atau B-1 rilis)",
+    "sort_order": 46,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Sambutan",
+    "requirement_detail": "Jabatan penandatangan",
+    "sort_order": 47,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Sambutan",
+    "requirement_detail": "Tanda tangan",
+    "sort_order": 48,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Sambutan",
+    "requirement_detail": "Nama jelas penandatangan\n1. dibuat dalam format bold\n2. Boleh mencantumkan gelar. Pilihan pencantuman gelar harus konsisten dengan bagian lain, seperti kata pengantar dan tim penyusun\n3. Tanpa NIP",
+    "sort_order": 49,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Sambutan",
+    "requirement_detail": "Terdapat nomor halaman romawi dan tanpa running title",
+    "sort_order": 50,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Sambutan",
+    "requirement_detail": "Jika berakhir di halaman ganjil, tambahkan halaman kosong tanpa nomor halaman dan running title. Halaman ini tetap dihitung sebagai halaman.",
+    "sort_order": 51,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Pengantar",
+    "requirement_detail": "Posisi:\n1. Halaman pertama dimulai pada pada halaman ganjil\n2. Jika publikasi dwibahasa, halaman kata pengantar dalam bahasa asing diletakkan berurutan setelah halaman kata pengantar dalam bahasa Indonesia (bisa di halaman genap)\n3. Terletak setelah tim penyusun atau kata sambutan (jika ada)",
+    "sort_order": 52,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Pengantar",
+    "requirement_detail": "Tulisan “Kata Pengantar” (untuk bahasa Indonesia) atau istilah lain dengan maksud yang sama",
+    "sort_order": 53,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Pengantar",
+    "requirement_detail": "Isi kata pengantar",
+    "sort_order": 54,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Pengantar",
+    "requirement_detail": "Tempat, bulan, dan tahun kata pengantar ditandatangani:\n1. Tempat: berisi nama ibukota negara/provinsi/kabupaten/kota tempat\nhalaman kata pengantar ditandatangani.\n2. Bulan: paling lama satu bulan sebelum publikasi dirilis (B atau B-1 rilis)",
+    "sort_order": 55,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Pengantar",
+    "requirement_detail": "Jabatan penandatangan\n1. Publikasi Pusat:\nInternal: boleh ditandatangani oleh pejabat minimal eselon 2\nEksternal:\n- Bahasa Indonesia: Kepala Badan Pusat Statistik\n- Bahasa Inggris: Chief Statistician\n2. Publikasi Daerah\nBahasa Indonesia: Kepala BPS Provinsi/Kabupaten/Kota XX\nBahasa Inggris: Head of BPS-Statistics XX Province/Regency/Municipality\n3. Jika pejabat penandatangan tidak ada, dapat diganti oleh pejabat pelaksana tugas atau pejabat lain yang ditunjuk.",
+    "sort_order": 56,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Pengantar",
+    "requirement_detail": "Tanda tangan",
+    "sort_order": 57,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Pengantar",
+    "requirement_detail": "Nama jelas penandatangan\n1. Dibuat dalam format bold\n2. Boleh mencantumkan gelar. Pilihan pencantuman gelar harus konsisten dengan bagian lain, seperti kata pengantar dan tim penyusun\n3. Tanpa NIP",
+    "sort_order": 58,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Pengantar",
+    "requirement_detail": "Terdapat nomor halaman romawi dan tanpa running title",
+    "sort_order": 59,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Kata Pengantar",
+    "requirement_detail": "Jika berakhir di halaman ganjil, tambahkan halaman kosong tanpa nomor halaman dan running title. Halaman ini tetap dihitung sebagai halaman.",
+    "sort_order": 60,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Abstraksi",
+    "requirement_detail": "Posisi:\n1. Halaman pertama dimulai pada pada halaman ganjil\n2. Jika publikasi dwibahasa, halaman abstraksi dalam bahasa asing diletakkan berurutan setelah halaman abstraksi dalam bahasa Indonesia (bisa di halaman genap)\n3. Terletak setelah halaman kata pengantar",
+    "sort_order": 61,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Abstraksi",
+    "requirement_detail": "Berisi penjelasan singkat yang menggambarkan isi publikasi secara keseluruhan",
+    "sort_order": 62,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Abstraksi",
+    "requirement_detail": "Terdapat nomor halaman romawi dan tanpa running title",
+    "sort_order": 63,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Abstraksi",
+    "requirement_detail": "Jika berakhir di halaman ganjil, tambahkan halaman kosong tanpa nomor halaman dan running title. Halaman ini tetap dihitung sebagai halaman.",
+    "sort_order": 64,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Isi",
+    "requirement_detail": "Posisi:\n1. Halaman pertama dimulai pada halaman ganjil\n2. Terletak setelah halaman kata pengantar atau abstraksi (jika ada).",
+    "sort_order": 65,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Isi",
+    "requirement_detail": "ISSN (jika ada)\n1. Diletakkan pada pojok kanan atas\n2. format penulisan  \"ISSN XXXX-XXXX\"\n3. Isian sama dengan di kover depan",
+    "sort_order": 66,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Isi",
+    "requirement_detail": "Tulisan “Daftar Isi”",
+    "sort_order": 67,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Isi",
+    "requirement_detail": "Judul publikasi dan tahun judul\nIsian harus sama dengan kover depan",
+    "sort_order": 68,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Isi",
+    "requirement_detail": "Edisi terbitan publikasi (jika publikasi rutin atau memiliki ISSN)\n1. format penulisan (Volume xx, Nomor xx (jika diterbitkan lebih dari 1 kali setahun), {tahun terbit})\n2. Isian harus sama dengan di kover depan.",
+    "sort_order": 69,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Isi",
+    "requirement_detail": "Isi:\n- nama bab pada halaman pendahuluan, kecuali\nhalaman judul utama sampai halaman tim penyusun.\n- nama bab atau subbab yang terdapat pada halaman isi buku.\n Pencantuman judul bab dan subbab maksimal sampai tiga tingkat (bab-subbab-subsubbab)\n- nama komponen pada halaman penutup\n- nomor yang merujuk pada halaman komponen daftar isi berada (nomor halaman)",
+    "sort_order": 70,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Isi",
+    "requirement_detail": "Setelah nomor subbab tidak perlu ada tanda titik (contoh salah: 2.3. seharusnya 2.3)",
+    "sort_order": 71,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Isi",
+    "requirement_detail": "Terdapat nomor halaman romawi dan tanpa running title",
+    "sort_order": 72,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Isi",
+    "requirement_detail": "Jika berakhir di halaman ganjil, tambahkan halaman kosong tanpa nomor halaman dan running title. Halaman ini tetap dihitung sebagai halaman.",
+    "sort_order": 73,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Tabel",
+    "requirement_detail": "Posisi:\n1. Halaman pertama dimulai pada halaman ganjil\n2. Terletak setelah halaman daftar isi",
+    "sort_order": 74,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Tabel",
+    "requirement_detail": "Diberikan nomor halaman romawi dan tanpa running title",
+    "sort_order": 75,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Tabel",
+    "requirement_detail": "Dibuat jika minimal ada 3 tabel dalam publikasi",
+    "sort_order": 76,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Tabel",
+    "requirement_detail": "Tulisan \"Daftar Tabel\"",
+    "sort_order": 77,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Tabel",
+    "requirement_detail": "Kata “Tabel” sebelum nomor tabel ditulis satu kali pada bagian atas atau berulang setiap nomor tabel",
+    "sort_order": 78,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Tabel",
+    "requirement_detail": "Setelah nomor tabel, tampilkan judul tabel dan nomor halamannya",
+    "sort_order": 79,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Tabel",
+    "requirement_detail": "Nomor tabel tidak perlu diakhiri tanda titik",
+    "sort_order": 80,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Tabel",
+    "requirement_detail": "Nomor tabel, judul tabel, dan nomor halaman pada daftar tabel harus sama dengan yang ada pada halaman isi",
+    "sort_order": 81,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Tabel",
+    "requirement_detail": "Jika berakhir di halaman ganjil, tambahkan halaman kosong tanpa nomor halaman dan running title. Halaman ini tetap dihitung sebagai halaman.",
+    "sort_order": 82,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Gambar",
+    "requirement_detail": "Posisi:\n1. Halaman pertama dimulai pada halaman ganjil\n2. Terletak setelah halaman daftar tabel (jika ada)",
+    "sort_order": 83,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Gambar",
+    "requirement_detail": "Diberikan nomor halaman romawi dan tanpa running title",
+    "sort_order": 84,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Gambar",
+    "requirement_detail": "Dibuat jika minimal ada 3 gambar dalam publikasi",
+    "sort_order": 85,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Gambar",
+    "requirement_detail": "Tulisan \"Daftar Gambar\"",
+    "sort_order": 86,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Gambar",
+    "requirement_detail": "Kata “Gambar” sebelum nomor gambar dapat ditulis satu kali pada bagian atas atau berulang setiap nomor gambar",
+    "sort_order": 87,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Gambar",
+    "requirement_detail": "Setelah nomor gambar, tampilkan judul gambar dan nomor halamannya",
+    "sort_order": 88,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Gambar",
+    "requirement_detail": "Nomor gambar tidak perlu diakhiri tanda titik",
+    "sort_order": 89,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Gambar",
+    "requirement_detail": "Nomor gambar, judul gambar, dan nomor halaman pada daftar gambar harus sama dengan yang ada pada halaman isi",
+    "sort_order": 90,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Gambar",
+    "requirement_detail": "Wajib menggunakan istilah \"Daftar Gambar\" walaupun semua isinya adalah grafik",
+    "sort_order": 91,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Gambar",
+    "requirement_detail": "Jika berakhir di halaman ganjil, tambahkan halaman kosong tanpa nomor halaman dan running title. Halaman ini tetap dihitung sebagai halaman.",
+    "sort_order": 92,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Lampiran",
+    "requirement_detail": "Posisi:\n1. Halaman pertama dimulai pada halaman ganjil\n2. Terletak setelah halaman daftar tabel dan daftar gambar (jika ada)",
+    "sort_order": 93,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Lampiran",
+    "requirement_detail": "Diberikan nomor halaman romawi dan tanpa running title",
+    "sort_order": 94,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Lampiran",
+    "requirement_detail": "Dibuat jika minimal ada 3 lampiran dalam publikasi",
+    "sort_order": 95,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Lampiran",
+    "requirement_detail": "Tulisan \"Daftar Lampiran\"",
+    "sort_order": 96,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Lampiran",
+    "requirement_detail": "Kata “Lampiran” sebelum nomor lampiran dapat ditulis satu kali pada bagian atas atau berulang setiap nomor lampiran",
+    "sort_order": 97,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Lampiran",
+    "requirement_detail": "Setelah nomor lampiran, tampilkan judul lampiran dan nomor halamannya",
+    "sort_order": 98,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Lampiran",
+    "requirement_detail": "Nomor lampiran tidak perlu diakhiri tanda titik",
+    "sort_order": 99,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Lampiran",
+    "requirement_detail": "Nomor lampiran, judul lampiran, dan nomor halaman pada daftar lampiran harus sama dengan yang ada pada halaman isi",
+    "sort_order": 100,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Daftar Lampiran",
+    "requirement_detail": "Jika berakhir di halaman ganjil, tambahkan halaman kosong tanpa nomor halaman dan running title. Halaman ini tetap dihitung sebagai halaman.",
+    "sort_order": 101,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Penjelasan Umum",
+    "requirement_detail": "Posisi:\n1. Halaman pertama dimulai pada halaman ganjil\n2. Terletak setelah halaman daftar tabel, daftar gambar, daftar lampiran (jika ada)",
+    "sort_order": 102,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Penjelasan Umum",
+    "requirement_detail": "Diberikan nomor halaman romawi dan tanpa running title",
+    "sort_order": 103,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Penjelasan Umum",
+    "requirement_detail": "Tulisan \"Penjelasan Umum\"",
+    "sort_order": 104,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Penjelasan Umum",
+    "requirement_detail": "Memuat simbol, satuan, singkatan, atau penjelasan secara umum yang ada pada halaman isi",
+    "sort_order": 105,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Penjelasan Umum",
+    "requirement_detail": "Jika berakhir di halaman ganjil, tambahkan halaman kosong tanpa nomor halaman dan running title. Halaman ini tetap dihitung sebagai halaman.",
+    "sort_order": 106,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Penjelasan Teknis",
+    "requirement_detail": "Posisi:\n1. Dimulai dari halaman ganjil\n2. Boleh berada di bagian \"Pendahuluan\" , \"Halaman Isi\", atau bagian belakang setelah halaman isi.",
+    "sort_order": 107,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Penjelasan Teknis",
+    "requirement_detail": "Berisi hal-hal teknis statistik (konsep definisi)",
+    "sort_order": 108,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Penjelasan Teknis",
+    "requirement_detail": "Tulisan \"Penjelasan Teknis\" atau \"Penjelasan\" untuk publikasi satu bahasa",
+    "sort_order": 109,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Penjelasan Teknis",
+    "requirement_detail": "Nomor Halaman dan Running Title:\n1. Beri nomor halaman romawi tanpa running title apabila penjelasan teknis berada di halaman pendahuluan\n2. Beri nomor halaman arab dengan running title apabila penjelasan teknis berada di halaman isi dan bagian belakang setelah halaman isi.",
+    "sort_order": 110,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Penjelasan Teknis",
+    "requirement_detail": "Penyajian 2 kolom untuk publikasi dwibahasa baik yang diletakkan di pendahuluan, halaman isi, maupun bagian belakang setelah halaman isi:\n1. Bahasa Indonesia diletakkan di kolom kiri dengan tulisan yang dicetak tegak.\n2. Bahasa asing diletakkan di kolom kanan dengan tulisan yang dicetak italic atau miring.\n3. Setiap paragraf pada penjelasan teknis bahasa Indonesia dan bahasa asing sedapat mungkin dimulai sejajar.",
+    "sort_order": 111,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Pendahuluan",
+    "inspection_item": "Penjelasan Teknis",
+    "requirement_detail": "Apabila berada pada halaman pendahuluan dan berakhir di halaman ganjil, tambahkan halaman kosong tanpa nomor halaman dan running title. Halaman ini tetap dihitung sebagai halaman.",
+    "sort_order": 112,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Pembatas Bab",
+    "requirement_detail": "Posisi:\n- Diletakkan di halaman ganjil.\n- Jika halaman terakhir bab sebelumnya berada pada halaman ganjil, tambahkan satu halaman kosong sebelum lembar pembatas.",
+    "sort_order": 113,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Pembatas Bab",
+    "requirement_detail": "Berisi judul bab.\n- Jika buku hasil kegiatan atau kajian statistik: tambahkan nomor bab.\n- Jika buku bukan hasil kegiatan atau kajian statistik: boleh tanpa nomor bab.",
+    "sort_order": 114,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Pembatas Bab",
+    "requirement_detail": "Dapat ditambahkan gambar/foto/ilustrasi, infografis, atau abstraksi/rangkuman singkat per bab yang berhubungan dengan isi bab.",
+    "sort_order": 115,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Pembatas Bab",
+    "requirement_detail": "Dihitung sebagai halaman dan dibuat tanpa running title dan nomor halaman.",
+    "sort_order": 116,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Pembatas Bab",
+    "requirement_detail": "Isi bab harus dimulai dari halaman ganjil, setelah halaman pembatas bab tambahkan halaman kosong atau diisi dengan ringkasan/catatan penting/informasi tambahan/foto yang berhubungan dengan isi bab.",
+    "sort_order": 117,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Pembatas Bab",
+    "requirement_detail": "Penggunaan pembatas bab harus konsisten untuk seluruh bab.",
+    "sort_order": 118,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Infografis",
+    "requirement_detail": "1. Apabila sebagai pendukung narasi, harus diberi nomor dan judul \"Gambar\" serta masuk pada daftar gambar.\n2. Apabila sebagai pembatas bab, maka mengikuti ketentuan mengenai pembatas bab.",
+    "sort_order": 119,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Infografis",
+    "requirement_detail": "Tidak perlu menambahkan logo dan nama BPS",
+    "sort_order": 120,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Infografis",
+    "requirement_detail": "Peletakan Sumber dan Ketentuannya:\n1. Apabila dalam satu publikasi memiliki sumber yang sama dan dituliskan di awal bagian penjelasan teknis, maka pada infografis tidak perlu diberikan sumber\n2. Apabila dalam satu publikasi memiliki sumber yang berbeda maka pada infografis baik sebagai pendukung narasi maupun pembatas bab dicantumkan sumber mengikuti aturan pencantuman sumber pada gambar",
+    "sort_order": 121,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Infografis",
+    "requirement_detail": "Perhatikan hak cipta dari ilustrasi atau aset yang digunakan dalam infografis. Sumber ilustrasi dicantumkan pada halaman katalog.",
+    "sort_order": 122,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Narasi",
+    "requirement_detail": "Posisi:\nSetiap bab dimulai dari halaman ganjil, harus konsisten dari awal hingga akhir buku.",
+    "sort_order": 123,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Narasi",
+    "requirement_detail": "Kriteria Penomoran Bab dan Subbab:\nBuku hasil kegiatan dan kajian statistik",
+    "sort_order": 124,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Narasi",
+    "requirement_detail": "Bagian utama/judul bab diberi nomor secara berkelanjutan, dapat menggunakan angka arab maupun angka romawi.\nContoh penulisan yang diperbolehkan:\n- Bab II Pendahuluan\n- Bab 2 Pendahuluan\n- 2. Pendahuluan\n- II. Pendahuluan",
+    "sort_order": 125,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Narasi",
+    "requirement_detail": "Nomor subbab ditulis menggunakan angka arab",
+    "sort_order": 126,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Narasi",
+    "requirement_detail": "Nomor subbab tidak boleh diakhiri tanda titik.\nContoh penulisan yang benar: 1.1 Latar Belakang",
+    "sort_order": 127,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Narasi",
+    "requirement_detail": "Penyajian 2 kolom untuk publikasi dwibahasa:\n1. Bahasa Indonesia diletakkan di kolom kiri dengan tulisan yang dicetak tegak.\n2. Bahasa Inggris diletakkan di kolom kanan dengan tulisan yang dicetak italic atau miring.\n3. Setiap paragraf pada penjelasan teknis bahasa Indonesia dan bahasa asing sedapat mungkin dimulai sejajar.\n4. Gambar dan tabel disajikan satu kali (tidak dibuat berulang untuk masing-masing bahasa).",
+    "sort_order": 128,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Running Title",
+    "requirement_detail": "Posisi:\nRunning title dicantumkan mulai dari halaman isi sampai dengan halaman penutup (halaman arab). Tidak perlu menampilkan running title pada halaman romawi.",
+    "sort_order": 129,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Running Title",
+    "requirement_detail": "Isi:\n1. Running title pada halaman ganjil (kanan) berisi judul bab\n2. Running title pada halaman genap (kiri) berisi judul buku",
+    "sort_order": 130,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Running Title",
+    "requirement_detail": "Pilihan peletakan running title untuk buku dwibahasa:\n1. Running title bahasa Indonesia diletakan di bagian header dan running title bahasa asing diletakan di bagian footer.\n2. Running title bahasa Indonesia dan bahasa asing dapat diletakan di satu tempat; baik di header, footer, maupun bagian samping sisi luar bidang cetak. Running title bahasa Indonesia diletakan di atas running title bahasa asing.",
+    "sort_order": 131,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Nomor tabel harus urut (boleh 1 jenjang atau 2 jenjang /lebih disesuaikan dengan babnya).",
+    "sort_order": 132,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Jika dwi bahasa, tabel disajikan satu kali (tidak dibuat berulang untuk masing-masing bahasa), dengan tata\ncara penulisan angka mengikuti kaidah dalam bahasa Indonesia.",
+    "sort_order": 133,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Beberapa komponen tabel yang wajib, yaitu nomor tabel, judul tabel, judul stub, judul kolom, nomor kolom, stub, sel (isi tabel), dan sumber (jika sumber data beragam/tidak bersumber dari satu kegiatan survei), sedangkan catatan di bawah tabel bersifat optional.",
+    "sort_order": 134,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Pada tabel yang berwarna, tidak perlu ada garis horisontal, bagian judul kolom, nomor kolom, dan isi tabel dapat dipisahkan dengan warna yang berbeda. Garis horisontal perlu ditambahkan jika ada judul kolom yang memiliki subjudul.",
+    "sort_order": 135,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Pada tabel tidak berwarna, garis horisontal digunakan pada bagian atas judul kolom, pengapit nomor kolom, dan di bawah tabel.",
+    "sort_order": 136,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Penomoran tabel didahului oleh kata ‘Tabel’ dan dibuat dengan angka Arab dari nomor 1 sampai nomor urut terakhir dalam publikasi atau disusun mengikuti nomor bab dan turunannya. Jika diurutkan menurut bab, antara nomor bab dan nomor urut tabel dalam bab dipisahkan dengan tanda titik.\nContoh:\nTabel 1.1 --> tabel pada bab 1 dan nomor urut 1\nTabel 2.3 --> tabel pada bab 2 dan nomor urut 3",
+    "sort_order": 137,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Tidak perlu menambahkan tanda titik (.) pada akhir nomor tabel maupun pada akhir judul tabel.",
+    "sort_order": 138,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Judul tabel dapat diletakkan di atas atau di samping tabel dan harus konsisten dari awal sampai akhir publikasi",
+    "sort_order": 139,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Huruf pertama setiap kata pada judul tabel ditulis dengan huruf kapital (Capitalize Each Word) kecuali kata sambung, kata penghubung, kata depan, dll",
+    "sort_order": 140,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Satuan ditulis dalam huruf kecil kecuali satuan yang mengandung nama wilayah, singkatan, dan simbol dan diletakkan sebelum keterangan waktu (jika ada). Jika judul tabel memuat keterangan waktu, tambahkan tanda koma sebelum keterangan waktu.\nContoh penulisan satuan: watt, US$, celcius, rupiah, Rp, yen, euro, ¥",
+    "sort_order": 141,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Judul gambar/tabel tidak perlu menampilkan kata \"Tahun\", tetapi diberikan tanda koma sebelum keterangan waktu.",
+    "sort_order": 142,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Jika pada judul menyebutkan variabel yang disajikan dalam tabel, variabel stub harus disebutkan lebih dahulu baru kemudian variabel kolom.",
+    "sort_order": 143,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Keterangan waktu dalam sebuah rentang ditulis dengan notasi En Dash “–“ tanpa spasi",
+    "sort_order": 144,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Untuk nomor kolom, penomoran dimulai dari kolom stub; nomor dibuat dengan angka arab (1,2, dan seterusnya); setiap nomor kolom diapit oleh tanda kurung; baris nomor kolom diapit oleh garis horisontal atau dengan warna yang berbeda.",
+    "sort_order": 145,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Huruf pertama setiap kata pada judul kolom ditulis dengan huruf kapital (Capitalize Each Word), kecuali kata sambung, kata penghubung, kata depan, dan partikel yang seluruhnya harus ditulis dengan huruf kecil.",
+    "sort_order": 146,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Huruf pertama setiap stub ditulis dengan huruf kapital (Sentence case), kecuali kata-kata yang huruf pertamanya harus ditulis dengan huruf kapital (Capitalize Each Word) sesuai dengan ketentuan penulisan bahasa Indonesia yang sedang berlaku, seperti nama wilayah, kepanjangan dari singkatan, dll.",
+    "sort_order": 147,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Isi tabel yang berupa angka harus rata kanan kemudian diatur sedemikian rupa sehingga letaknya di tengah kolom.",
+    "sort_order": 148,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Pada isi tabel, angka negatif ditulis dengan tanda minus (-) dan tanpa spasi.",
+    "sort_order": 149,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Pemisah ribuan dalam tabel menggunakan tanda titik (.), baik publikasi berbahasa Indonesia atau dwi bahasa. Kecuali publikasi yang hanya berbahasa asing, sesuai dengan kaidah bahasanya.",
+    "sort_order": 150,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Simbol yang digunakan pada tabel mengacu pada Pedoman Pembuatan Publikasi 2023, jika tidak ada maka bisa menggunakan superscript angka, huruf, atau simbol lainnya.",
+    "sort_order": 151,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Simbol atau superscript pada tabel tidak perlu diberikan tanda \")\" dan diberikan penjelasan di bawah tabel dengan didahului kata \"Catatan\". Sebelum superscript tidak perlu ada spasi.",
+    "sort_order": 152,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Pada isi tabel, nilai nol mutlak (tidak ada) disajikan dengan menggunakan tanda strip panjang (en dash), sedangkan untuk nilai mendekati nol dilambangkan dengan “~0” (tidak ada penggunaan angka 0; 0,0; maupun 0,00 dalam tabel)",
+    "sort_order": 153,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Simbol * yang digunakan pada tabel seharusnya dipakai untuk menyatakan angka sementara, untuk catatan lainnya bisa menggunakan superscript angka, huruf, atau simbol lainnya.",
+    "sort_order": 154,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Penjelasan yang diletakan di bawah tabel dan sebelum sumber didahului dengan kata “Catatan:” bukan \"Keterangan:\".",
+    "sort_order": 155,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Bila sebagian besar tabel menggunakan catatan yang sama maka catatan tersebut dapat dinyatakan dalam penjelasan umum atau penjelasan teknis.",
+    "sort_order": 156,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Jika seluruh data pada buku berasal dari satu sumber maka boleh tidak mencantumkan sumber dalam setiap tabel dengan syarat sumber data sudah disebutkan/dijelaskan pada bagian awal buku.",
+    "sort_order": 157,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Tabel",
+    "requirement_detail": "Bentuk tabel sebaiknya tidak berlawanan dengan orientasi publikasi. Jika tabel memiliki baris atau kolom yang banyak sehingga tidak cukup jika dimuat dalam satu halaman maka bisa memotong tabel dengan menggunakan lanjutan tabel",
+    "sort_order": 158,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Jika dwi bahasa, Gambar disajikan satu kali (tidak dibuat berulang untuk masing-masing bahasa).",
+    "sort_order": 159,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Penomoran gambar didahului oleh kata ‘Gambar’ dan dibuat dengan angka Arab. Nomor urut gambar dapat dibuat berurutan dari awal sampai akhir halaman isi, tetapi bisa juga disesuaikan dengan nomor bab dan diikuti dengan nomor urut dalam satu bab. Contoh: Gambar 3.2, artinya gambar yang ada di Bab III urutan 2.",
+    "sort_order": 160,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Tidak perlu menambahkan tanda titik (.) pada akhir nomor gambar maupun pada akhir judul gambar.",
+    "sort_order": 161,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Judul gambar diletakan di bawah atau di samping gambar tanpa diakhiri dengan tanda titik dan harus konsisten dari awal sampai akhir buku.",
+    "sort_order": 162,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Huruf pertama setiap kata dalam judul gambar ditulis dengan huruf kapital (Capitalize Each Word), kecuali kata sambung, kata penghubung, kata depan, dan partikel yang seluruhnya harus ditulis dengan huruf kecil.",
+    "sort_order": 163,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Jika publikasi disajikan dalam dwi bahasa maka judul gambar bahasa asing dicetak miring dan ditulis di bawah judul bahasa Indonesia.",
+    "sort_order": 164,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Satuan pada judul gambar ditulis dalam huruf kecil kecuali satuan yang mengandung nama wilayah, singkatan, dan simbol dan diletakkan sebelum keterangan waktu (jika ada). Jika judul gambar memuat keterangan waktu, tambahkan tanda koma sebelum keterangan waktu.\nContoh penulisan satuan: watt, US$, celcius, rupiah, Rp, yen, euro, ¥",
+    "sort_order": 165,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Judul gambar tidak perlu menampilkan kata \"Tahun\", tetapi diberikan tanda koma sebelum keterangan waktu.",
+    "sort_order": 166,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Pada judul gambar, keterangan waktu dalam rentang ditulis dengan notasi En Dash “–“ tanpa spasi.",
+    "sort_order": 167,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Simbol yang digunakan pada tabel mengacu pada Pedoman Pembuatan Publikasi 2023, jika tidak ada maka bisa menggunakan superscript angka, huruf, atau simbol lainnya.",
+    "sort_order": 168,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Setiap gambar yang menggunakan simbol maka setiap simbol harus diberikan catatan. Catatan dari data yang ditampilkan posisinya diletakkan di bawah gambar dan di atas sumber, didahului dengan kata “Catatan:” bukan \"Keterangan:\".",
+    "sort_order": 169,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Simbol atau superscript pada gambar tidak perlu diberikan tanda \")\" dan sebelum superscript tidak perlu ada spasi.",
+    "sort_order": 170,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Simbol * yang digunakan pada gambar seharusnya dipakai untuk menyatakan angka sementara, untuk catatan lainnya bisa menggunakan superscript angka, huruf, atau simbol lainnya.",
+    "sort_order": 171,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Bila sebagian besar tabel menggunakan catatan yang sama maka catatan tersebut dapat dinyatakan dalam penjelasan umum atau penjelasan teknis.",
+    "sort_order": 172,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Sumber harus ditampilkan jika:\na. Dikutip dari sumber lain\nb. Merupakan hasil olahan penulis dari beberapa sumber data",
+    "sort_order": 173,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Jika seluruh data pada buku berasal dari satu sumber maka boleh tidak mencantumkan sumber dalam setiap gambar dengan syarat sumber data sudah disebutkan/dijelaskan pada bagian awal buku.",
+    "sort_order": 174,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Untuk judul gambar yang diletakan di bawah gambar, catatan dan sumber diletakan sebelum judul gambar.",
+    "sort_order": 175,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Pemisah ribuan dalam Gambar menggunakan tanda titik (.), baik publikasi berbahasa Indonesia atau dwi bahasa. Kecuali publikasi yang hanya berbahasa asing, sesuai dengan kaidah bahasanya.",
+    "sort_order": 176,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "konten",
+    "anatomy_section": "Isi",
+    "inspection_item": "Gambar",
+    "requirement_detail": "Peta merupakan bagian dari gambar, seharusnya diberikan nomor dan judul gambar dan tidak perlu ada halaman daftar peta.",
+    "sort_order": 177,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Pustaka",
+    "requirement_detail": "Kriteria:\nBersifat wajib jika publikasi merupakan hasil kegiatan dan kajian statistik.",
+    "sort_order": 178,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Pustaka",
+    "requirement_detail": "Posisi:\nDiletakkan setelah halaman isi dan sebelum indeks, glosarium, atau lampiran (jika ada).",
+    "sort_order": 179,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Pustaka",
+    "requirement_detail": "Menggunakan format Chicago Manual of Style (CMS).\nDisusun menurut abjad dari nama belakang penulis utama masing-masing sumber referensi.",
+    "sort_order": 180,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Pustaka",
+    "requirement_detail": "Nama penulis kedua dan seterusnya dituliskan sama (tidak mengalami perubahan) dengan yang tertulis pada sumber asli.",
+    "sort_order": 181,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Pustaka",
+    "requirement_detail": "Diformat dengan menjorok (hanging indent), baris kedua dan berikutnya menjorok lebih dalam daripada baris pertama.",
+    "sort_order": 182,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Pustaka",
+    "requirement_detail": "Tidak terdapat spasi baris pada pustaka satu dengan yang lain.",
+    "sort_order": 183,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Pustaka",
+    "requirement_detail": "Penulisan miring digunakan pada penulisan judul buku, judul jurnal, dan judul prosiding.",
+    "sort_order": 184,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Pustaka",
+    "requirement_detail": "Jika tahun terbit tidak diketahui maka tuliskan n.d.",
+    "sort_order": 185,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Pustaka",
+    "requirement_detail": "Halaman daftar pustaka diberikan nomor halaman Arab dan running title.",
+    "sort_order": 186,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Indeks",
+    "requirement_detail": "Posisi: Dimulai dari halaman ganjil.",
+    "sort_order": 187,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Indeks",
+    "requirement_detail": "Berisi kata kunci atau istilah penting yang diprediksi akan dicari oleh pembaca beserta nomor halamannya.",
+    "sort_order": 188,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Indeks",
+    "requirement_detail": "Disusun menurut abjad disertai nomor halaman di mana istilah itu berada.",
+    "sort_order": 189,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Indeks",
+    "requirement_detail": "Berikan nomor halaman arab dan running title.",
+    "sort_order": 190,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Istilah/Glosarium",
+    "requirement_detail": "Posisi: Dimulai dari halaman ganjil.",
+    "sort_order": 191,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Istilah/Glosarium",
+    "requirement_detail": "Berisi daftar kata penting yang terdapat dalam isi buku dan diikuti penjelasannya. Apabila sudah memuat penjelasan teknis yang berisi daftar istilah disertai penjelasannya maka glosarium tidak perlu lagi dibuat.",
+    "sort_order": 192,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Istilah/Glosarium",
+    "requirement_detail": "Disusun menurut abjad",
+    "sort_order": 193,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Daftar Istilah/Glosarium",
+    "requirement_detail": "Berikan nomor halaman Arab dan running title.",
+    "sort_order": 194,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Lampiran",
+    "requirement_detail": "Posisi: Dimulai dari halaman ganjil.",
+    "sort_order": 195,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Lampiran",
+    "requirement_detail": "Setiap lampiran harus diberikan judul pada bagian atas.",
+    "sort_order": 196,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Lampiran",
+    "requirement_detail": "Judul lampiran dimulai dengan kata “Lampiran” untuk publikasi satu bahasa dan \"Lampiran/Appendix\" untuk publikasi dwibahasa serta diikuti oleh nomor lampiran.",
+    "sort_order": 197,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Lampiran",
+    "requirement_detail": "Nomor lampiran menggunakan angka arab. Penomoran lampiran berlanjut meskipun dengan jenis lampiran/dokumen yang berbeda.",
+    "sort_order": 198,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Lampiran",
+    "requirement_detail": "Ketentuan penulisan judul dan nomor lampiran mengacu pada judul tabel.",
+    "sort_order": 199,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Lampiran",
+    "requirement_detail": "Berikan nomor halaman Arab dan running title.",
+    "sort_order": 200,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Kover Belakang",
+    "requirement_detail": "Tidak diperkenankan menambahkan abstraksi.",
+    "sort_order": 201,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Kover Belakang",
+    "requirement_detail": "Halaman Kosong\n1. Tambahkan 2 halaman kosong sebelum kover belakang, apabila halaman terakhir buku adalah halaman ganjil.\n2. Tambahkan 1 halaman kosong sebelum kover belakang, apabila halaman terakhir buku adalah halaman genap.\n3. Tanpa running title dan nomor halaman",
+    "sort_order": 202,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Kover Belakang",
+    "requirement_detail": "Logo Sensus BPS\n1. Diletakkan di pojok kanan atas.\n2. Logo suatu sensus ditampilkan pada t-1 sampai t-2 sensus berikutnya.\n3. Jika logo sensus yang sama sudah ditampilkan pada kover depan, tidak perlu ditampilkan lagi pada kover belakang",
+    "sort_order": 203,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Kover Belakang",
+    "requirement_detail": "Logo Lainnya\n1. Bertujuan untuk Promosi seperti BerAKHLAK dan #bangga melayani bangsa dapat dicantumkan selama masih ada imbauan terkait promosi tersebut.\n2. Posisi di pojok kanan atas.",
+    "sort_order": 204,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Kover Belakang",
+    "requirement_detail": "Slogan Data Mencerdaskan Bangsa\n1. Dicantumkan pada tengah halaman secara proporsional.\n2. Sesuaikan dengan bahasa yang digunakan pada publikasi, apakah satu bahasa atau dwibahasa.\n3. Format penulisan harus sesuai template yang dapat diunduh pada https://linktr.ee/pedomanpublikasi2023 >> Logo-Logo",
+    "sort_order": 205,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Kover Belakang",
+    "requirement_detail": "Logo BPS\n1. Posisi di bagian kiri bawah.\n2. Sesuai dengan Perka BPS terkait Logo BPS (tanpa efek apapun).",
+    "sort_order": 206,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Kover Belakang",
+    "requirement_detail": "Nama dan Alamat Penerbit BPS\n1. diletakkan di bagian kiri bawah, sebelah kanan logo BPS.\n2. Aturan penulisan nama BPS penerbit mengikuti ketentuan seperti pada kover depan (poin\n4. Alamat BPS penerbit dilengkapi dengan kode pos, nomor telepon, nomor fax, homepage, dan alamat email.",
+    "sort_order": 207,
+    "is_active": true
+  },
+  {
+    "tenant_id": null,
+    "type": "layout",
+    "anatomy_section": "Penutup",
+    "inspection_item": "Kover Belakang",
+    "requirement_detail": "Barcode ISSN/ISBN (jika memiliki ISSN/ISBN dan bukan publikasi katalog atau direktori)\n1. Posisi di pojok kanan bawah.\n2. Di bagian atas barcode tertulis kata ISBN atau ISSN yang diikuti dengan nomor ISBN atau ISSN.\n3. Dibuat dengan menggunakan tulisan hitam dan latar putih.",
+    "sort_order": 208,
+    "is_active": true
+  }
+]
